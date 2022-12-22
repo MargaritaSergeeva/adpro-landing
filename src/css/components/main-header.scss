@@ -1,6 +1,17 @@
 .main-header {
+  position: relative;
   background-color: $bg-color;
-  border-bottom: 1px solid #ffffff;
+  padding-bottom: 12px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  }
 
   &__block {
     display: flex;
@@ -14,10 +25,10 @@
   }
 
   &__logo {
-    width: 138px;
+    width: 146px;
 
     img {
-      width: 138px;
+      width: 146px;
     }
   }
 
@@ -64,11 +75,12 @@
   }
 
   @media(max-width: 767px) {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 8px;
+    padding-bottom: 18px;
 
     &__block {
       min-height: 0;
+      padding-right: 8px;
     }
   }
 }

@@ -20,7 +20,7 @@ body {
 }
 
 .custom-font {
-  font-family: "ALSDeparture", "Arial", sans-serif;
+  font-family: "PlusJakartaSans", "Arial", sans-serif;
 }
 
 .visually-hidden,
@@ -47,7 +47,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
 
   img {
-    width: 138px;
+    width: 146px;
   }
 
   @media(max-width: 767px) {
@@ -73,7 +73,7 @@ input[type="radio"].visually-hidden {
 
 .main-title {
   margin: 0;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 66px;
   line-height: 67px;
   letter-spacing: 0;

@@ -1,6 +1,6 @@
-# NativeLab (build)
+# AdProfex (build)
 
-NativeLab project
+AdProfex project
 
 ## Install the dependencies
 ```bash

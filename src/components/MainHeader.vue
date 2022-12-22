@@ -18,7 +18,7 @@
           class="essential-link"
         >
           <q-item-section @click="router.push({name: 'registration'})">
-            <q-item-label>Разместить рекламу</q-item-label>
+            <q-item-label>Advertise with us</q-item-label>
           </q-item-section>
         </q-item>
         <q-item
@@ -26,7 +26,7 @@
           class="essential-link"
         >
           <q-item-section @click="router.push({name: 'login'})">
-            <q-item-label>Вход</q-item-label>
+            <q-item-label>Login</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>
@@ -48,8 +48,8 @@
           />
         </q-list>
         <q-list class="main-header__user-list">
-          <q-btn class="main-btn main-btn--black q-mr-sm" @click="router.push({name: 'registration'})">Разместить рекламу</q-btn>
-          <q-btn class="main-btn main-btn--simple" @click="router.push({name: 'login'})">Вход</q-btn>
+          <q-btn class="main-btn main-btn--green main-btn--green--mini q-mr-sm" @click="router.push({name: 'registration'})">Advertise with us</q-btn>
+          <q-btn class="main-btn main-btn--simple" @click="router.push({name: 'login'})">Login</q-btn>
         </q-list>
       </div>
 
@@ -77,11 +77,15 @@ const isMenuOpen = ref(false);
 
 const essentialLinks = [
   {
-    title: 'Рекламодателям и агентствам',
+    title: 'Advertisers and Agencies',
     link: '/'
   },
   {
-    title: 'Контакты',
+    title: 'Publishers',
+    link: '/pubs'
+  },
+  {
+    title: 'Contacts',
     link: '/contacts'
   },
 ];

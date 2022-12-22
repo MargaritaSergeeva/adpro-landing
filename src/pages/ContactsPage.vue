@@ -4,10 +4,10 @@
       <div class="main-contacts-section__item">
         <h1 class="custom-font main-contacts-section__title main-title">Контакты</h1>
         <div class="main-contacts-section__map map-block">
-          <div class="map-block__map">
-            <img src="~assets/contacts/map.jpg" srcset="~assets/contacts/map.jpg 1x, ~assets/contacts/map-2x.jpg 2x" alt="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.1165981024583!2d38.94657153982445!3d45.053133946636656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04f68294faaab%3A0x54163e19aa6a107f!2z0JrRgNCw0YHQvdGL0YUg0J_QsNGA0YLQuNC30LDQvSwzNjc!5e0!3m2!1sru!2sru!4v1670957331848!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+<!--          <div class="map-block__map">-->
+<!--            <img src="~assets/contacts/map.jpg" srcset="~assets/contacts/map.jpg 1x, ~assets/contacts/map-2x.jpg 2x" alt="map">-->
+<!--            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.1165981024583!2d38.94657153982445!3d45.053133946636656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04f68294faaab%3A0x54163e19aa6a107f!2z0JrRgNCw0YHQvdGL0YUg0J_QsNGA0YLQuNC30LDQvSwzNjc!5e0!3m2!1sru!2sru!4v1670957331848!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+<!--          </div>-->
           <p>350049, г. Краснодар,<br> ул. Красных Партизан, д. 367, пом. 613</p>
         </div>
       </div>
