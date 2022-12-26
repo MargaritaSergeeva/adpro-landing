@@ -1,14 +1,19 @@
 .features-section {
+  margin-top: -8px;
+  background-image: url('~assets/main/features-bg.png');
+  background-repeat: no-repeat;
+  background-position: calc(50% + 710px) -18px;
 
   &__container {
-    padding-top: 164px;
-    padding-bottom: 119px;
+    padding-top: 0;
+    padding-bottom: 108px;
   }
 
   &__title {
-    max-width: 700px;
+    max-width: 900px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 133px;
   }
 
   &__intro {
@@ -28,7 +33,7 @@
     line-height: 140%;
     width: 30%;
     margin-right: 40px;
-    margin-bottom: 39px;
+    margin-bottom: 46px;
     padding-left: 73px;
     padding-right: 0;
 
@@ -48,7 +53,7 @@
       left: 35px;
       width: 26px;
       height: 26px;
-      //background-image: url('~assets/main/radio.svg');
+      background-image: url('~assets/main/radio.svg');
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -91,8 +96,12 @@
 
   @media(max-width: 767px) {
     &__container {
-      padding-top: 85px;
-      padding-bottom: 63px;
+      padding-top: 40px;
+      padding-bottom: 43px;
+    }
+
+    &__title {
+      margin-bottom: 50px;
     }
 
     &__intro {

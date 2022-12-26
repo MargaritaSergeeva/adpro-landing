@@ -291,53 +291,36 @@
 
     <section class="features-section">
       <div class="features-section__container container">
-        <h2 class="features-section__title title custom-font" >Собственный RTB движок и технологии</h2>
-        <p class="features-section__intro intro intro--bold" >Особенности DMP</p>
+        <h2 class="features-section__title title custom-font" >Unique proprietary RTB engine and technologies</h2>
         <q-list class="features-section__list" >
           <q-item class="features-section__item">
             <p>
-              Собственный <b>сквозной идентификатор</b>, позволяющий платить за уникальный охват до 3х раз меньше
+              more than <b>15,000</b> own sites, which allows you to purchase inventory without surcharges
             </p>
           </q-item>
           <q-item class="features-section__item">
             <p>
-              Доступ к <b>данным Яндекса</b> для уточнения пола, возраста и интересов аудитории
+              <b>integration</b> with international trackers and verifiers
             </p>
           </q-item>
           <q-item class="features-section__item">
             <p>
-              Модели <b>машинного обучения</b>, в том числе под СРА клиентов
+              possibility of <b>purchasing model</b> selection (SRS, SRM, vCPM)
             </p>
           </q-item>
           <q-item class="features-section__item">
             <p>
-              Возможность собрать <b>любой</b> кастомный сегмент
+              automatic <b>optimization of creatives</b> (adjustment for content)
             </p>
           </q-item>
           <q-item class="features-section__item">
             <p>
-              <b>Интеграция</b> с другими DMP
+              <b>real-time</b> statistics
             </p>
           </q-item>
           <q-item class="features-section__item features-section__item--big">
             <p>
-              Привязка к <b>офлайн данным</b> позволяет
-            </p>
-            <p>
-              а) измерять эффективность каждого показа (влияние на конверсию)
-            </p>
-            <p>
-              б) обучать ML на фактических данных
-            </p>
-          </q-item>
-          <q-item class="features-section__item features-section__item--last">
-            <p>
-              <b>Автообучаемые ML</b> для многих сфер бизнеса
-            </p>
-          </q-item>
-          <q-item class="features-section__item features-section__item--last">
-            <p>
-              Проведение <b>опросов и замеров</b> OMI/ Tiboron
+              <b>all formats</b> are available - native, banners, video
             </p>
           </q-item>
         </q-list>
