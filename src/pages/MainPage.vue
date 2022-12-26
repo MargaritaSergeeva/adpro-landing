@@ -144,34 +144,34 @@
     </section>
 
     <section class="advantages-section container">
-      <h2 class="advantages-section__title title custom-font" >Преимущества NativeLab рекламодателям и агентствам</h2>
+      <h2 class="advantages-section__title title custom-font" >Advantages of working with AdProfex for advertisers and agencies</h2>
       <q-list class="advantages-section__list">
         <q-item class="advantages-section__item" >
-          <p><b>Стоимость</b> размещения ниже, чем на других платформах</p>
+          <p>The <b>cost</b> of advertising is lower than that of competitors</p>
         </q-item>
         <q-item class="advantages-section__item" >
-          <p>Выгодная закупка с помощью <b>кросс-девайс таргетинга</b>, который позволяет поймать одного пользователя на разных устройствах</p>
+          <p>Profitable purchase using <b>Cross-device targeting</b> technology, which allows you to catch one user on different devices</p>
         </q-item>
         <q-item class="advantages-section__item" >
-          <p><b>Таргетинг 200+:</b> социально- демографический, контекстуальный, <br>по интересам пользователей,  <br>по ключевым словам</p>
+          <p><b>Targeting 200 +:</b> socio-demographic; contextual; interests of users; in keywords</p>
         </q-item>
         <q-item class="advantages-section__item" >
-          <p>Более <b>2760</b> собственных сайтов <br><b>+ 8050</b> партнерских</p>
+          <p>Over <b>2760</b> own sites <br><b>+ 8050</b> partner sites</p>
         </q-item>
         <q-item class="advantages-section__item" >
-          <p>Контроль <b>качества</b> и viewability рекламы</p>
+          <p><b>Quality</b>  control and of advertising viewability</p>
         </q-item>
         <q-item class="advantages-section__item" >
-          <p>Принимаем <b>любые</b> верификаторы и трекеры</p>
+          <p>Accept <b>any</b> verifiers and trackers</p>
         </q-item>
         <q-item class="advantages-section__item" >
-          <p>Полная <b>прозрачность</b> <br>в работе</p>
+          <p>Complete work <b>transparency</b></p>
         </q-item>
         <q-item class="advantages-section__item" >
-          <p>Креативы в <b>подарок</b>, адаптивные форматы</p>
+          <p>Creatives as a <b>bonus</b>, adaptive configurations</p>
         </q-item>
         <q-item class="advantages-section__item" >
-          <p>Форматы <b>закупки</b> срс, срм, vcpm</p>
+          <p><b>Purchasing</b> forms срс, срм, vcpm</p>
         </q-item>
       </q-list>
     </section>
