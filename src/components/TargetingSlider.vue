@@ -36,10 +36,10 @@
       </swiper-slide>
     </swiper>
     <p class="targeting-slider__append-buttons">
-      <button :class="{ 'active': slideNumber === 1 }" @click="slideTo(1)">В начале статьи</button>
-      <button :class="{ 'active': slideNumber === 2 }" @click="slideTo(2)">В конце статьи</button>
-      <button :class="{ 'active': slideNumber === 3 }" @click="slideTo(3)">В середине статьи</button>
-      <button :class="{ 'active': slideNumber === 4 }" @click="slideTo(4)">На правой боковой панели</button>
+      <button :class="{ 'active': slideNumber === 1 }" @click="slideTo(1)">At the beginning of the article</button>
+      <button :class="{ 'active': slideNumber === 2 }" @click="slideTo(2)">At the end of the article</button>
+      <button :class="{ 'active': slideNumber === 3 }" @click="slideTo(3)">In the middle of the article</button>
+      <button :class="{ 'active': slideNumber === 4 }" @click="slideTo(4)">On the right sidebar</button>
     </p>
   </div>
 

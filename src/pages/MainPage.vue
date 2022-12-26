@@ -63,125 +63,122 @@
       </div>
     </section>
 
+    <section class="targeting-section">
+      <div class="targeting-section__container container">
+        <h2 class="targeting-section__title title title--white custom-font" >Configuration and targeting</h2>
+        <p class="targeting-section__intro intro intro--white" >TGB • TGB In-Read • Banner</p>
+        <div class="targeting-section__desktop" >
+            <TargetingSlider/>
+        </div>
+        <div class="targeting-section__mob" >
+          <q-list class="targeting-section__mob-list">
+            <q-item class="targeting-section__mob-item">
+              <picture>
+                <img class="targeting-section__mob-img" src="~assets/main/begining-article.png" srcset="~assets/main/begining-article.png 1x, ~assets/main/begining-article-2x.png 2x" alt="begining article">
+              </picture>
+              <p class="targeting-section__mob-text">At the beginning of the article</p>
+            </q-item>
+            <q-item class="targeting-section__mob-item">
+              <picture>
+                <img class="targeting-section__mob-img" src="~assets/main/ending-article.png" srcset="~assets/main/ending-article.png 1x, ~assets/main/ending-article-2x.png 2x" alt="ending article">
+              </picture>
+              <p class="targeting-section__mob-text">At the end of the article</p>
+            </q-item>
+            <q-item class="targeting-section__mob-item">
+              <picture>
+                <img class="targeting-section__mob-img" src="~assets/main/middle-article.png" srcset="~assets/main/middle-article.png 1x, ~assets/main/middle-article-2x.png 2x" alt="middle article">
+              </picture>
+              <p class="targeting-section__mob-text">In the middle of the article</p>
+            </q-item>
+            <q-item class="targeting-section__mob-item">
+              <picture>
+                <img class="targeting-section__mob-img" src="~assets/main/side-article.png" srcset="~assets/main/side-article.png 1x, ~assets/main/side-article-2x.png 2x" alt="side article">
+              </picture>
+              <p class="targeting-section__mob-text">On the right sidebar</p>
+            </q-item>
+          </q-list>
+        </div>
+        <p class="targeting-section__intro intro intro--white intro--bold" >Available Target Settings</p>
+        <q-list class="targeting-section__target-list" >
+          <q-item class="targeting-section__target-item"><p>Geography</p></q-item>
+          <q-item class="targeting-section__target-item"><p>Devices <br>(PC/Mob)</p></q-item>
+          <q-item class="targeting-section__target-item"><p>Operating systems</p></q-item>
+          <q-item class="targeting-section__target-item"><p>Telecom operators</p></q-item>
+          <q-item class="targeting-section__target-item"><p>Browsers</p></q-item>
+        </q-list>
+        <q-list class="targeting-section__target-list-big" >
+          <q-item class="targeting-section__target-item-big">
+            <p>Integration with DMP platforms</p>
+            <ul>
+              <li>AmberData</li>
+              <li>Weborama and others</li>
+            </ul>
+          </q-item>
+          <q-item class="targeting-section__target-item-big targeting-section__target-item-big--wide">
+            <p>Audience data</p>
+            <ul>
+              <li>Society/Demography (gender/age)</li>
+              <li>Interests/hobby</li>
+              <li>Retargeting, LAL</li>
+            </ul>
+          </q-item>
+          <q-item class="targeting-section__target-item-big targeting-section__target-item-big--extra">
+            <p>Keywords</p>
+            <span>
+              Articles with necessary key words
+            </span>
+          </q-item>
+          <q-item class="targeting-section__target-item-big targeting-section__target-item-big--extra">
+            <p>Sites/Platforms list</p>
+            <span>
+              Thematic sites/platforms selection
+            </span>
+          </q-item>
+        </q-list>
+        <q-btn
+          class="targeting-section__main-btn main-btn main-btn--green main-btn--wide"
+        >
+          Advertise with us
+        </q-btn>
+      </div>
+    </section>
+
+    <section class="advantages-section container">
+      <h2 class="advantages-section__title title custom-font" >Преимущества NativeLab рекламодателям и агентствам</h2>
+      <q-list class="advantages-section__list">
+        <q-item class="advantages-section__item" >
+          <p><b>Стоимость</b> размещения ниже, чем на других платформах</p>
+        </q-item>
+        <q-item class="advantages-section__item" >
+          <p>Выгодная закупка с помощью <b>кросс-девайс таргетинга</b>, который позволяет поймать одного пользователя на разных устройствах</p>
+        </q-item>
+        <q-item class="advantages-section__item" >
+          <p><b>Таргетинг 200+:</b> социально- демографический, контекстуальный, <br>по интересам пользователей,  <br>по ключевым словам</p>
+        </q-item>
+        <q-item class="advantages-section__item" >
+          <p>Более <b>2760</b> собственных сайтов <br><b>+ 8050</b> партнерских</p>
+        </q-item>
+        <q-item class="advantages-section__item" >
+          <p>Контроль <b>качества</b> и viewability рекламы</p>
+        </q-item>
+        <q-item class="advantages-section__item" >
+          <p>Принимаем <b>любые</b> верификаторы и трекеры</p>
+        </q-item>
+        <q-item class="advantages-section__item" >
+          <p>Полная <b>прозрачность</b> <br>в работе</p>
+        </q-item>
+        <q-item class="advantages-section__item" >
+          <p>Креативы в <b>подарок</b>, адаптивные форматы</p>
+        </q-item>
+        <q-item class="advantages-section__item" >
+          <p>Форматы <b>закупки</b> срс, срм, vcpm</p>
+        </q-item>
+      </q-list>
+    </section>
+
   </q-page>
-<!--    <section class="targeting-section">-->
-<!--      <div class="targeting-section__container container">-->
-<!--        <h2 class="targeting-section__title title title&#45;&#45;white custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Форматы и таргетинги</h2>-->
-<!--        <p class="targeting-section__intro intro intro&#45;&#45;white" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">TGB • TGB In-Read • Баннер</p>-->
-<!--        <div class="targeting-section__desktop" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
-<!--            <TargetingSlider/>-->
-<!--        </div>-->
-<!--        <div class="targeting-section__mob" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
-<!--          <q-list class="targeting-section__mob-list">-->
-<!--            <q-item class="targeting-section__mob-item">-->
-<!--              <picture>-->
-<!--                <img class="targeting-section__mob-img" src="~assets/main/begining-article.png" srcset="~assets/main/begining-article.png 1x, ~assets/main/begining-article-2x.png 2x" alt="begining article">-->
-<!--              </picture>-->
-<!--              <p class="targeting-section__mob-text">В начале статьи</p>-->
-<!--            </q-item>-->
-<!--            <q-item class="targeting-section__mob-item">-->
-<!--              <picture>-->
-<!--                <img class="targeting-section__mob-img" src="~assets/main/ending-article.png" srcset="~assets/main/ending-article.png 1x, ~assets/main/ending-article-2x.png 2x" alt="ending article">-->
-<!--              </picture>-->
-<!--              <p class="targeting-section__mob-text">В конце статьи</p>-->
-<!--            </q-item>-->
-<!--            <q-item class="targeting-section__mob-item">-->
-<!--              <picture>-->
-<!--                <img class="targeting-section__mob-img" src="~assets/main/middle-article.png" srcset="~assets/main/middle-article.png 1x, ~assets/main/middle-article-2x.png 2x" alt="middle article">-->
-<!--              </picture>-->
-<!--              <p class="targeting-section__mob-text">В середине статьи</p>-->
-<!--            </q-item>-->
-<!--            <q-item class="targeting-section__mob-item">-->
-<!--              <picture>-->
-<!--                <img class="targeting-section__mob-img" src="~assets/main/side-article.png" srcset="~assets/main/side-article.png 1x, ~assets/main/side-article-2x.png 2x" alt="side article">-->
-<!--              </picture>-->
-<!--              <p class="targeting-section__mob-text">На правой боковой панели</p>-->
-<!--            </q-item>-->
-<!--          </q-list>-->
-<!--        </div>-->
-<!--        <p class="targeting-section__intro intro intro&#45;&#45;white intro&#45;&#45;bold" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Доступные настройки таргетов</p>-->
-<!--        <q-list class="targeting-section__target-list" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
-<!--          <q-item class="targeting-section__target-item"><p>География</p></q-item>-->
-<!--          <q-item class="targeting-section__target-item"><p>Устройства <br>(ПК/моб)</p></q-item>-->
-<!--          <q-item class="targeting-section__target-item"><p>Операционные системы</p></q-item>-->
-<!--          <q-item class="targeting-section__target-item"><p>Операторы связи</p></q-item>-->
-<!--          <q-item class="targeting-section__target-item"><p>Браузеры</p></q-item>-->
-<!--        </q-list>-->
-<!--        <q-list class="targeting-section__target-list-big" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
-<!--          <q-item class="targeting-section__target-item-big">-->
-<!--            <p>Интеграция с DMP- платформами</p>-->
-<!--            <ul>-->
-<!--              <li>AmberData</li>-->
-<!--              <li>Weborama и другими</li>-->
-<!--            </ul>-->
-<!--          </q-item>-->
-<!--          <q-item class="targeting-section__target-item-big">-->
-<!--            <p>Аудиторные данные</p>-->
-<!--            <ul>-->
-<!--              <li>соцдем (пол/возраст)</li>-->
-<!--              <li>интересы</li>-->
-<!--              <li>Retargeting, LAL</li>-->
-<!--            </ul>-->
-<!--          </q-item>-->
-<!--          <q-item class="targeting-section__target-item-big targeting-section__target-item-big&#45;&#45;extra">-->
-<!--            <p>Ключевые слова</p>-->
-<!--            <span>-->
-<!--              Покажем в статьях, где есть те или иные слова-->
-<!--            </span>-->
-<!--          </q-item>-->
-<!--          <q-item class="targeting-section__target-item-big targeting-section__target-item-big&#45;&#45;extra">-->
-<!--            <p>Список площадок</p>-->
-<!--            <span>-->
-<!--              Подбор тематических площадок-->
-<!--            </span>-->
-<!--          </q-item>-->
-<!--        </q-list>-->
-<!--        <q-btn-->
-<!--          class="targeting-section__main-btn main-btn main-btn&#45;&#45;blue main-btn&#45;&#45;wide"-->
-<!--          data-aos="fade-up"-->
-<!--          data-aos-anchor-placement="top-center"-->
-<!--          data-aos-duration="1000"-->
-<!--          data-aos-once="true"-->
-<!--          @click="router.push({name: 'registration'})"-->
-<!--        >-->
-<!--          Разместить рекламу-->
-<!--        </q-btn>-->
-<!--      </div>-->
-<!--    </section>-->
-<!--    <section class="advantages-section container">-->
-<!--      <h2 class="advantages-section__title title custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Преимущества NativeLab рекламодателям и агентствам</h2>-->
-<!--      <q-list class="advantages-section__list">-->
-<!--        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
-<!--          <p><b>Стоимость</b> размещения ниже, чем на других платформах</p>-->
-<!--        </q-item>-->
-<!--        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
-<!--          <p>Выгодная закупка с помощью <b>кросс-девайс таргетинга</b>, который позволяет поймать одного пользователя на разных устройствах</p>-->
-<!--        </q-item>-->
-<!--        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
-<!--          <p><b>Таргетинг 200+:</b> социально- демографический, контекстуальный, <br>по интересам пользователей,  <br>по ключевым словам</p>-->
-<!--        </q-item>-->
-<!--        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
-<!--          <p>Более <b>2760</b> собственных сайтов <br><b>+ 8050</b> партнерских</p>-->
-<!--        </q-item>-->
-<!--        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
-<!--          <p>Контроль <b>качества</b> и viewability рекламы</p>-->
-<!--        </q-item>-->
-<!--        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
-<!--          <p>Принимаем <b>любые</b> верификаторы и трекеры</p>-->
-<!--        </q-item>-->
-<!--        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
-<!--          <p>Полная <b>прозрачность</b> <br>в работе</p>-->
-<!--        </q-item>-->
-<!--        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
-<!--          <p>Креативы в <b>подарок</b>, адаптивные форматы</p>-->
-<!--        </q-item>-->
-<!--        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
-<!--          <p>Форматы <b>закупки</b> срс, срм, vcpm</p>-->
-<!--        </q-item>-->
-<!--      </q-list>-->
-<!--    </section>-->
 <!--    <section class="faq-section container">-->
-<!--      <h2 class="faq-section__title title custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">FAQ</h2>-->
+<!--      <h2 class="faq-section__title title custom-font" >FAQ</h2>-->
 <!--      <q-list class="faq-section__list">-->
 <!--        <q-expansion-item-->
 <!--          expand-separator-->
@@ -189,7 +186,7 @@
 <!--          class="faq-section__accordion"-->
 <!--          expand-icon="add"-->
 <!--          expanded-icon="remove"-->
-<!--          data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"-->
+<!--          -->
 <!--        >-->
 <!--          <q-card>-->
 <!--            <q-card-section>-->
@@ -203,7 +200,7 @@
 <!--          class="faq-section__accordion"-->
 <!--          expand-icon="add"-->
 <!--          expanded-icon="remove"-->
-<!--          data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"-->
+<!--          -->
 <!--        >-->
 <!--          <q-card>-->
 <!--            <q-card-section>-->
@@ -251,7 +248,7 @@
 <!--          class="faq-section__accordion"-->
 <!--          expand-icon="add"-->
 <!--          expanded-icon="remove"-->
-<!--          data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"-->
+<!--          -->
 <!--        >-->
 <!--          <q-card>-->
 <!--            <q-card-section>-->
@@ -277,7 +274,7 @@
 <!--          class="faq-section__accordion"-->
 <!--          expand-icon="add"-->
 <!--          expanded-icon="remove"-->
-<!--          data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"-->
+<!--          -->
 <!--        >-->
 <!--          <q-card>-->
 <!--            <q-card-section>-->
@@ -297,9 +294,9 @@
 <!--    </section>-->
 <!--    <section class="features-section">-->
 <!--      <div class="features-section__container container">-->
-<!--        <h2 class="features-section__title title custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Собственный RTB движок и технологии</h2>-->
-<!--        <p class="features-section__intro intro intro&#45;&#45;bold" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Особенности DMP</p>-->
-<!--        <q-list class="features-section__list" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
+<!--        <h2 class="features-section__title title custom-font" >Собственный RTB движок и технологии</h2>-->
+<!--        <p class="features-section__intro intro intro&#45;&#45;bold" >Особенности DMP</p>-->
+<!--        <q-list class="features-section__list" >-->
 <!--          <q-item class="features-section__item">-->
 <!--            <p>-->
 <!--              Собственный <b>сквозной идентификатор</b>, позволяющий платить за уникальный охват до 3х раз меньше-->
@@ -351,41 +348,41 @@
 <!--    </section>-->
 <!--    <section class="control-section">-->
 <!--      <div class="control-section__container container">-->
-<!--        <h2 class="control-section__title title title&#45;&#45;white custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Контроль за размещением рекламы</h2>-->
-<!--        <p class="control-section__intro intro intro&#45;&#45;bold intro&#45;&#45;white" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Brand safety</p>-->
+<!--        <h2 class="control-section__title title title&#45;&#45;white custom-font" >Контроль за размещением рекламы</h2>-->
+<!--        <p class="control-section__intro intro intro&#45;&#45;bold intro&#45;&#45;white" >Brand safety</p>-->
 <!--        <div class="control-section__block">-->
-<!--          <div class="control-section__block-item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
-<!--            <h3 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Защита бренда от фрода и ненужного контента</h3>-->
+<!--          <div class="control-section__block-item" >-->
+<!--            <h3 >Защита бренда от фрода и ненужного контента</h3>-->
 <!--            <q-list class="control-section__block-list">-->
-<!--              <q-item class="control-section__block-list-item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
+<!--              <q-item class="control-section__block-list-item" >-->
 <!--                <p>Стоимость размещения ниже, чем на других платформах</p>-->
 <!--              </q-item>-->
-<!--              <q-item class="control-section__block-list-item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
+<!--              <q-item class="control-section__block-list-item" >-->
 <!--                <p>Применение контекстных фильтров</p>-->
 <!--              </q-item>-->
-<!--              <q-item class="control-section__block-list-item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
+<!--              <q-item class="control-section__block-list-item" >-->
 <!--                <p>Black lists</p>-->
 <!--              </q-item>-->
-<!--              <q-item class="control-section__block-list-item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
+<!--              <q-item class="control-section__block-list-item" >-->
 <!--                <p>Ручная оптимизация каждой рекламной кампании</p>-->
 <!--              </q-item>-->
-<!--              <q-item class="control-section__block-list-item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
+<!--              <q-item class="control-section__block-list-item" >-->
 <!--                <p>Фильтрация по ключевым словам, контенту страницы</p>-->
 <!--              </q-item>-->
 <!--            </q-list>-->
 <!--          </div>-->
-<!--          <div class="control-section__block-item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
-<!--            <h3 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Высокое качество нашего трафика подтверждено</h3>-->
-<!--            <div class="control-section__block-sign" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
+<!--          <div class="control-section__block-item" >-->
+<!--            <h3 >Высокое качество нашего трафика подтверждено</h3>-->
+<!--            <div class="control-section__block-sign" >-->
 <!--              <p>Антифрод А</p>-->
 <!--            </div>-->
-<!--            <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Собственная система предотвращения фрода – Антифрод А</p>-->
-<!--            <div class="control-section__block-imgs" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
+<!--            <p >Собственная система предотвращения фрода – Антифрод А</p>-->
+<!--            <div class="control-section__block-imgs" >-->
 <!--              <img class="control-section__block-img" src="~assets/main/weborama.jpg" srcset="~assets/main/weborama.jpg 1x, ~assets/main/weborama-2x.jpg 2x" alt="weborama">-->
 <!--              <img class="control-section__block-img" src="~assets/main/adriver.jpg" srcset="~assets/main/adriver.jpg 1x, ~assets/main/adriver-2x.jpg 2x" alt="adriver">-->
 <!--              <img class="control-section__block-img" src="~assets/main/sizmek.jpg" srcset="~assets/main/sizmek.jpg 1x, ~assets/main/sizmek-2x.jpg 2x" alt="sizmek">-->
 <!--            </div>-->
-<!--            <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Применение верификаторов третьих сторон Weborama, AdRiver, Sizmek или других</p>-->
+<!--            <p >Применение верификаторов третьих сторон Weborama, AdRiver, Sizmek или других</p>-->
 <!--          </div>-->
 <!--        </div>-->
 <!--        <q-btn-->
@@ -401,15 +398,15 @@
 <!--      </div>-->
 <!--    </section>-->
 <!--    <section class="partners-section container">-->
-<!--      <h2 class="partners-section__title title custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Наши партнеры</h2>-->
-<!--      <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
+<!--      <h2 class="partners-section__title title custom-font" >Наши партнеры</h2>-->
+<!--      <div >-->
 <!--        <PartnersSlider/>-->
 <!--      </div>-->
 <!--    </section>-->
 <!--    <section class="contacts-section">-->
 <!--      <div class="contacts-section__container container">-->
-<!--        <h2 class="contacts-section__title title custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Контакты</h2>-->
-<!--        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
+<!--        <h2 class="contacts-section__title title custom-font" >Контакты</h2>-->
+<!--        <div >-->
 <!--          <ContactsSlider/>-->
 <!--        </div>-->
 <!--      </div>-->
