@@ -1,20 +1,24 @@
 .faq-section {
-  padding-top: 167px;
-  padding-bottom: 180px;
-  //background-image: url('~assets/main/faq-bg.svg');
+  padding-top: 130px;
+  padding-bottom: 160px;
+  background-image: url('~assets/main/faq-bg.png');
   background-repeat: no-repeat;
-  background-position: center top;
-  max-width: 1210px;
+  background-position: calc(50%) -18px;
+  background-size: 1655px;
+
+  &__container {
+    max-width: 1210px;
+  }
 
   &__title {
-    margin-bottom: 105px;
+    margin-bottom: 90px;
   }
 
   &__list {
-    margin-bottom: 82px;
+    margin-bottom: 138px;
     .q-item__label {
       padding-top: 20px;
-      padding-bottom: 30px;
+      padding-bottom: 25px;
       font-weight: 600;
       font-size: 22px;
       line-height: 30px;
@@ -22,7 +26,7 @@
   }
 
   &__accordion {
-    border-bottom: 1px solid $white-color;
+    border-bottom: 4px solid $white-color;
 
     .q-focus-helper {
       display: none;
@@ -68,19 +72,21 @@
   }
 
   @media (max-width: 767px) {
-    padding-top: 70px;
-    padding-bottom: 90px;
-    background-size: 180px;
+    background-image: url('~assets/main/faq-bg-mob.png');
+    padding-top: 78px;
+    padding-bottom: 50px;
+    background-size: 120%;
+    background-position: calc(50% + 28px) 0;
 
     &__title {
-      margin-bottom: 33px;
+      margin-bottom: 52px;
     }
 
     &__list {
-      margin-bottom: 80px;
+      margin-bottom: 95px;
       .q-item__label {
-        padding-top: 18px;
-        padding-bottom: 18px;
+        padding-top: 12px;
+        padding-bottom: 15px;
         font-size: 16px;
         line-height: 140%;
       }

@@ -176,176 +176,174 @@
       </q-list>
     </section>
 
+    <section class="faq-section">
+      <div class="faq-section__container container">
+        <h2 class="faq-section__title title custom-font" >FAQ</h2>
+        <q-list class="faq-section__list">
+          <q-expansion-item
+            expand-separator
+            label="What formats/configurations do you provide with?"
+            class="faq-section__accordion"
+            expand-icon="add"
+            expanded-icon="remove"
+
+          >
+            <q-card>
+              <q-card-section>
+                At the moment, we have three formats: TGB, TGB In-Read, banner.
+              </q-card-section>
+            </q-card>
+          </q-expansion-item>
+          <q-expansion-item
+            expand-separator
+            label="What are the technical requirements?"
+            class="faq-section__accordion"
+            expand-icon="add"
+            expanded-icon="remove"
+
+          >
+            <q-card>
+              <q-card-section>
+                <p><b>To TGB</b></p>
+                <p>The advertising format is located under the article or on the side</p>
+                <p>100 character header</p>
+                <p>Files in JPG and PNG are supported for images</p>
+                <p>You can crop an image when you create a creative</p>
+                <p>The maximum size of a square image is 367x367px</p>
+                <p>Maximum rectangular image size - 539x359px</p>
+                <p><b>To TGB In-Read</b></p>
+                <p>The advertising format is located inside the text, it is automatically scaled for the mobile version. It can combine the following elements: image, title, description and button.</p>
+                <p>Valid image sizes:</p>
+                <p>300*300, 400*400, 305*240, 300*250, 300*409, 250*200, 320*270</p>
+                <p>345*345, 345*200, 400*400, 400*350, 335*224, 250*300, 250*400, 240*250, 240*300, 500*455, 500*310, 500*240, 345*230, 600*336, 790*520, 376*376</p>
+                <p>Text ads do not allow abuse of Caps-Lock and exclamation/question marks. Each sentence must end with a punctuation mark: full stop, exclamation mark or question mark.</p>
+                <p>A text declaration can consist of the following elements:</p>
+                <p>Title - no more than 65 characters, recommended 25.</p>
+                <p>Description - no more than 90 characters, recommended 75.</p>
+                <p>The main image is the dimensions cm above, preferably 3-4 sizes</p>
+                <p>Call to Action: text on the button, for example: More details, Install, Download, etc. No more than 15 characters, recommended 10.</p>
+                <p><b>To banners</b></p>
+                <p>Image formats: PNG (.png), GIF (.gif), JPEG (.jpeg).</p>
+                <p><b>The main allowable dimensions are:</b></p>
+                <p>For phones: 320x50, 320x100, 300x250, 300х300, 300x600, 240x400, 320x480, 480x320, 970x90, 970x250, 336x280, 728x90, 468x60, 160х600</p>
+                <p>For PC: 728x90, 240x400, 300x250, 468x60, 160x600, 336x280, 300x600, 300х300, 970x250, 1000x120, 970х90</p>
+                <p>For tablets: 320x50, 320x100, 300x250, 300х300, 300x600, 240x400, 320x480, 480x320, 970x90, 970x250, 336x280, 728x90, 468x60, 160х600</p>
+                <p><b>Additional dimensions:</b></p>
+                <p>For phones: 300x500, 240x600, 300x50, 300x100, 375x50, 200x200, 250x250</p>
+                <p>For PC: 320x100, 300x500, 120x600, 200х300, 980x120, 980x90</p>
+                <p>For tablets: 768x1024, 1024x768, 640x360, 360x640</p>
+                <p>Recommended rules for creating HTML banners:</p>
+                <ul>
+                  <li>The banner must be an archive of many files: index.html and sprite.png (two and no more than 100 are recommended). Only relative references to resource files are allowed in the index.html file.</li>
+                  <li>Be sure to reduce the size of sprite.png files through the service https://tinypng.com/</li>
+                  <li>In an index.html file, base64 views for images are not allowed.</li>
+                </ul>
+                <p>All clicks of events that cause a switch to an advertiser's site must be handled strictly through the &lt;a href=””&gt;</p>
+              </q-card-section>
+            </q-card>
+          </q-expansion-item>
+          <q-expansion-item
+            expand-separator
+            label="What targets are available?"
+            class="faq-section__accordion"
+            expand-icon="add"
+            expanded-icon="remove"
+
+          >
+            <q-card>
+              <q-card-section>
+                <p>At the moment, it is possible to target:</p>
+                <ul>
+                  <li>GEO</li>
+                  <li>Devices (PC/mobile)</li>
+                  <li>Browsers</li>
+                  <li>Operating systems</li>
+                  <li>Telecom operators</li>
+                  <li>Audience data</li>
+                  <li>Social demography (gender/age)</li>
+                  <li>AdProfex Interests - Native data based on content consumption</li>
+                  <li>Third-party data: AmberData, Weborama</li>
+                  <li>Retargeting, Look-alike</li>
+                </ul>
+              </q-card-section>
+            </q-card>
+          </q-expansion-item>
+          <q-expansion-item
+            expand-separator
+            label="Which counters does the platform support?"
+            class="faq-section__accordion"
+            expand-icon="add"
+            expanded-icon="remove"
+
+          >
+            <q-card>
+              <q-card-section>
+                We accept any counters of different systems.
+              </q-card-section>
+            </q-card>
+          </q-expansion-item>
+        </q-list>
+        <q-btn class="faq-section__main-btn main-btn main-btn--green main-btn--wide">
+          Advertise with us
+        </q-btn>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="features-section__container container">
+        <h2 class="features-section__title title custom-font" >Собственный RTB движок и технологии</h2>
+        <p class="features-section__intro intro intro--bold" >Особенности DMP</p>
+        <q-list class="features-section__list" >
+          <q-item class="features-section__item">
+            <p>
+              Собственный <b>сквозной идентификатор</b>, позволяющий платить за уникальный охват до 3х раз меньше
+            </p>
+          </q-item>
+          <q-item class="features-section__item">
+            <p>
+              Доступ к <b>данным Яндекса</b> для уточнения пола, возраста и интересов аудитории
+            </p>
+          </q-item>
+          <q-item class="features-section__item">
+            <p>
+              Модели <b>машинного обучения</b>, в том числе под СРА клиентов
+            </p>
+          </q-item>
+          <q-item class="features-section__item">
+            <p>
+              Возможность собрать <b>любой</b> кастомный сегмент
+            </p>
+          </q-item>
+          <q-item class="features-section__item">
+            <p>
+              <b>Интеграция</b> с другими DMP
+            </p>
+          </q-item>
+          <q-item class="features-section__item features-section__item--big">
+            <p>
+              Привязка к <b>офлайн данным</b> позволяет
+            </p>
+            <p>
+              а) измерять эффективность каждого показа (влияние на конверсию)
+            </p>
+            <p>
+              б) обучать ML на фактических данных
+            </p>
+          </q-item>
+          <q-item class="features-section__item features-section__item--last">
+            <p>
+              <b>Автообучаемые ML</b> для многих сфер бизнеса
+            </p>
+          </q-item>
+          <q-item class="features-section__item features-section__item--last">
+            <p>
+              Проведение <b>опросов и замеров</b> OMI/ Tiboron
+            </p>
+          </q-item>
+        </q-list>
+      </div>
+    </section>
   </q-page>
-<!--    <section class="faq-section container">-->
-<!--      <h2 class="faq-section__title title custom-font" >FAQ</h2>-->
-<!--      <q-list class="faq-section__list">-->
-<!--        <q-expansion-item-->
-<!--          expand-separator-->
-<!--          label="Какие форматы есть?"-->
-<!--          class="faq-section__accordion"-->
-<!--          expand-icon="add"-->
-<!--          expanded-icon="remove"-->
-<!--          -->
-<!--        >-->
-<!--          <q-card>-->
-<!--            <q-card-section>-->
-<!--              На данный момент у нас присутствуют три формата: <b>TGB, TGB In-Read, баннер.</b>-->
-<!--            </q-card-section>-->
-<!--          </q-card>-->
-<!--        </q-expansion-item>-->
-<!--        <q-expansion-item-->
-<!--          expand-separator-->
-<!--          label="Какие технические требования?"-->
-<!--          class="faq-section__accordion"-->
-<!--          expand-icon="add"-->
-<!--          expanded-icon="remove"-->
-<!--          -->
-<!--        >-->
-<!--          <q-card>-->
-<!--            <q-card-section>-->
-<!--              <p><b>К TGB</b></p>-->
-<!--              <p>Рекламный формат располагается под статьей или сбоку.</p>-->
-<!--              <p>Заголовок 100 символов.</p>-->
-<!--              <p>Для изображений поддерживаются файлы в JPG и PNG.</p>-->
-<!--              <p>Изображение можно обрезать при создании креатива.</p>-->
-<!--              <p>Максимальный размер квадратного изображения – 367х367px</p>-->
-<!--              <p>Максимальный размер прямоугольного изображения – 539х359px</p>-->
-<!--              <p><b>К TGB In-Read</b></p>-->
-<!--              <p>Рекламный формат располагается внутри текста, автоматически масштабируется под мобильную версию. Может комбинировать в себе следующие элементы: изображение, заголовок, описание и кнопка.</p>-->
-<!--              <p>Допустимые размеры изображений :</p>-->
-<!--              <p>300*300, 400*400, 305*240, 300*250, 300*409, 250*200, 320*270</p>-->
-<!--              <p>345*345, 345*200, 400*400, 400*350, 335*224, 250*300, 250*400, 240*250, 240*300, 500*455, 500*310, 500*240, 345*230, 600*336, 790*520, 376*376</p>-->
-<!--              <p>В текстовых объявлениях не разрешаются злоупотребления Caps-Lock и восклицательными/вопросительными знаками. Каждое предложение должно заканчиваться знаком препинания: точка, восклицательный или вопросительный знаки.</p>-->
-<!--              <p>Текстовое объявление может состоять из следующих элементов:</p>-->
-<!--              <p>Заголовок - Не более 65 символов, рекомендовано 25.</p>-->
-<!--              <p>Описание - Не более 90 символов, рекомендовано 75.</p>-->
-<!--              <p>Главное изображение - размеры см выше, желательно 3-4 размера.</p>-->
-<!--              <p>Call to Action: текст на кнопке, например: Подробнее, Установить, Скачать и др. Не более 15 символов, рекомендовано 10.</p>-->
-<!--              <p><b>К баннерам</b></p>-->
-<!--              <p>Форматы изображений: PNG (.png), GIF (.gif), JPEG (.jpeg).</p>-->
-<!--              <p><b>Основные допустимые размеры:</b></p>-->
-<!--              <p>Для телефонов: 320x50, 320x100, 300x250, 300х300, 300x600, 240x400, 320x480, 480x320, 970x90, 970x250, 336x280, 728x90, 468x60, 160х600</p>-->
-<!--              <p>Для ПК: 728x90, 240x400, 300x250, 468x60, 160x600, 336x280, 300x600, 300х300, 970x250, 1000x120, 970х90</p>-->
-<!--              <p>Для планшетов: 320x50, 320x100, 300x250, 300х300, 300x600, 240x400, 320x480, 480x320, 970x90, 970x250, 336x280, 728x90, 468x60, 160х600</p>-->
-<!--              <p><b>Дополнительные размеры:</b></p>-->
-<!--              <p>Для телефонов: 300x500, 240x600, 300x50, 300x100, 375x50, 200x200, 250x250</p>-->
-<!--              <p>Для ПК: 320x100, 300x500, 120x600, 200х300, 980x120, 980x90</p>-->
-<!--              <p>Для планшетов: 768x1024, 1024x768, 640x360, 360x640</p>-->
-<!--              <p>Рекомендуемые правила для создания HTML баннеров:</p>-->
-<!--              <ul>-->
-<!--                <li>Баннер должен быть представлен архивом из множества файлов: index.html и sprite.png (рекомендуется два и не более 100). В файле index.html допускаются только относительные ссылки на файлы-ресурсы.</li>-->
-<!--                <li>Обязательно уменьшайте размер файлов sprite.png через сервис https://tinypng.com/</li>-->
-<!--                <li>В index.html файле не допускается использование base64 представлений для изображений.</li>-->
-<!--              </ul>-->
-<!--              <p>Обработка в всех клик событий, вызывающих переход на сайт рекламодателя должна быть реализована строго через тег &lt;a href=””&gt;</p>-->
-<!--            </q-card-section>-->
-<!--          </q-card>-->
-<!--        </q-expansion-item>-->
-<!--        <q-expansion-item-->
-<!--          expand-separator-->
-<!--          label="Какие таргетинги есть?"-->
-<!--          class="faq-section__accordion"-->
-<!--          expand-icon="add"-->
-<!--          expanded-icon="remove"-->
-<!--          -->
-<!--        >-->
-<!--          <q-card>-->
-<!--            <q-card-section>-->
-<!--              <p>На данный момент есть возможность таргетироваться по:</p>-->
-<!--              <ul>-->
-<!--                <li>ГЕО</li>-->
-<!--                <li>Устройствам (ПК/моб)</li>-->
-<!--                <li>Браузерам</li>-->
-<!--                <li>Операционным системам</li>-->
-<!--                <li>Операторам связи</li>-->
-<!--                <li>Аудиторным данным:</li>-->
-<!--                <li>Соцдем (пол/возраст)</li>-->
-<!--                <li>Интересы NativeLab - Собственные данные, основанные на потреблении контента</li>-->
-<!--                <li>Сторонние данные: AmberData, Weborama</li>-->
-<!--                <li>Ретаргетинг, Look-alike</li>-->
-<!--              </ul>-->
-<!--            </q-card-section>-->
-<!--          </q-card>-->
-<!--        </q-expansion-item>-->
-<!--        <q-expansion-item-->
-<!--          expand-separator-->
-<!--          label="Какие счетчики поддерживает платформа?"-->
-<!--          class="faq-section__accordion"-->
-<!--          expand-icon="add"-->
-<!--          expanded-icon="remove"-->
-<!--          -->
-<!--        >-->
-<!--          <q-card>-->
-<!--            <q-card-section>-->
-<!--              Принимаем любые счетчики разных систем.-->
-<!--            </q-card-section>-->
-<!--          </q-card>-->
-<!--        </q-expansion-item>-->
-<!--      </q-list>-->
-<!--      <q-btn-->
-<!--        class="faq-section__main-btn main-btn main-btn&#45;&#45;blue main-btn&#45;&#45;wide"-->
-<!--        data-aos="fade-up" data-aos-anchor-placement="top-center"-->
-<!--        data-aos-duration="1000"-->
-<!--        data-aos-once="true"-->
-<!--        @click="router.push({name: 'registration'})">-->
-<!--          Разместить рекламу-->
-<!--      </q-btn>-->
-<!--    </section>-->
-<!--    <section class="features-section">-->
-<!--      <div class="features-section__container container">-->
-<!--        <h2 class="features-section__title title custom-font" >Собственный RTB движок и технологии</h2>-->
-<!--        <p class="features-section__intro intro intro&#45;&#45;bold" >Особенности DMP</p>-->
-<!--        <q-list class="features-section__list" >-->
-<!--          <q-item class="features-section__item">-->
-<!--            <p>-->
-<!--              Собственный <b>сквозной идентификатор</b>, позволяющий платить за уникальный охват до 3х раз меньше-->
-<!--            </p>-->
-<!--          </q-item>-->
-<!--          <q-item class="features-section__item">-->
-<!--            <p>-->
-<!--              Доступ к <b>данным Яндекса</b> для уточнения пола, возраста и интересов аудитории-->
-<!--            </p>-->
-<!--          </q-item>-->
-<!--          <q-item class="features-section__item">-->
-<!--            <p>-->
-<!--              Модели <b>машинного обучения</b>, в том числе под СРА клиентов-->
-<!--            </p>-->
-<!--          </q-item>-->
-<!--          <q-item class="features-section__item">-->
-<!--            <p>-->
-<!--              Возможность собрать <b>любой</b> кастомный сегмент-->
-<!--            </p>-->
-<!--          </q-item>-->
-<!--          <q-item class="features-section__item">-->
-<!--            <p>-->
-<!--              <b>Интеграция</b> с другими DMP-->
-<!--            </p>-->
-<!--          </q-item>-->
-<!--          <q-item class="features-section__item features-section__item&#45;&#45;big">-->
-<!--            <p>-->
-<!--              Привязка к <b>офлайн данным</b> позволяет-->
-<!--            </p>-->
-<!--            <p>-->
-<!--              а) измерять эффективность каждого показа (влияние на конверсию)-->
-<!--            </p>-->
-<!--            <p>-->
-<!--              б) обучать ML на фактических данных-->
-<!--            </p>-->
-<!--          </q-item>-->
-<!--          <q-item class="features-section__item features-section__item&#45;&#45;last">-->
-<!--            <p>-->
-<!--              <b>Автообучаемые ML</b> для многих сфер бизнеса-->
-<!--            </p>-->
-<!--          </q-item>-->
-<!--          <q-item class="features-section__item features-section__item&#45;&#45;last">-->
-<!--            <p>-->
-<!--              Проведение <b>опросов и замеров</b> OMI/ Tiboron-->
-<!--            </p>-->
-<!--          </q-item>-->
-<!--        </q-list>-->
-<!--      </div>-->
-<!--    </section>-->
 <!--    <section class="control-section">-->
 <!--      <div class="control-section__container container">-->
 <!--        <h2 class="control-section__title title title&#45;&#45;white custom-font" >Контроль за размещением рекламы</h2>-->
