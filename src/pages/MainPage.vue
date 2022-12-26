@@ -56,21 +56,21 @@
     </section>
 
     <section class="geo-section container">
-      <h2 class="geo-section__title title custom-font">Broad GEO coverage</h2>
-      <p class="geo-section__intro intro">We offer advertisers quality native traffic from more than 22 countries</p>
-      <div class="geo-section__slider-block">
+      <h2 class="geo-section__title title custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Broad GEO coverage</h2>
+      <p class="geo-section__intro intro" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">We offer advertisers quality native traffic from more than 22 countries</p>
+      <div class="geo-section__slider-block" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
         <GeoSlider/>
       </div>
     </section>
 
     <section class="targeting-section">
       <div class="targeting-section__container container">
-        <h2 class="targeting-section__title title title--white custom-font" >Configuration and targeting</h2>
-        <p class="targeting-section__intro intro intro--white" >TGB • TGB In-Read • Banner</p>
-        <div class="targeting-section__desktop" >
+        <h2 class="targeting-section__title title title--white custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Configuration and targeting</h2>
+        <p class="targeting-section__intro intro intro--white" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">TGB • TGB In-Read • Banner</p>
+        <div class="targeting-section__desktop" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
             <TargetingSlider/>
         </div>
-        <div class="targeting-section__mob" >
+        <div class="targeting-section__mob" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
           <q-list class="targeting-section__mob-list">
             <q-item class="targeting-section__mob-item">
               <picture>
@@ -98,15 +98,15 @@
             </q-item>
           </q-list>
         </div>
-        <p class="targeting-section__intro intro intro--white intro--bold" >Available Target Settings</p>
-        <q-list class="targeting-section__target-list" >
+        <p class="targeting-section__intro intro intro--white intro--bold" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Available Target Settings</p>
+        <q-list class="targeting-section__target-list" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
           <q-item class="targeting-section__target-item"><p>Geography</p></q-item>
           <q-item class="targeting-section__target-item"><p>Devices <br>(PC/Mob)</p></q-item>
           <q-item class="targeting-section__target-item"><p>Operating systems</p></q-item>
           <q-item class="targeting-section__target-item"><p>Telecom operators</p></q-item>
           <q-item class="targeting-section__target-item"><p>Browsers</p></q-item>
         </q-list>
-        <q-list class="targeting-section__target-list-big" >
+        <q-list class="targeting-section__target-list-big" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
           <q-item class="targeting-section__target-item-big">
             <p>Integration with DMP platforms</p>
             <ul>
@@ -137,6 +137,7 @@
         </q-list>
         <q-btn
           class="targeting-section__main-btn main-btn main-btn--green main-btn--wide"
+          data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"
         >
           Advertise with us
         </q-btn>
@@ -144,33 +145,33 @@
     </section>
 
     <section class="advantages-section container">
-      <h2 class="advantages-section__title title custom-font" >Advantages of working with AdProfex for advertisers and agencies</h2>
+      <h2 class="advantages-section__title title custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Advantages of working with AdProfex for advertisers and agencies</h2>
       <q-list class="advantages-section__list">
-        <q-item class="advantages-section__item" >
+        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
           <p>The <b>cost</b> of advertising is lower than that of competitors</p>
         </q-item>
-        <q-item class="advantages-section__item" >
+        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
           <p>Profitable purchase using <b>Cross-device targeting</b> technology, which allows you to catch one user on different devices</p>
         </q-item>
-        <q-item class="advantages-section__item" >
+        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
           <p><b>Targeting 200 +:</b> socio-demographic; contextual; interests of users; in keywords</p>
         </q-item>
-        <q-item class="advantages-section__item" >
+        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
           <p>Over <b>2760</b> own sites <br><b>+ 8050</b> partner sites</p>
         </q-item>
-        <q-item class="advantages-section__item" >
+        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
           <p><b>Quality</b>  control and of advertising viewability</p>
         </q-item>
-        <q-item class="advantages-section__item" >
+        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
           <p>Accept <b>any</b> verifiers and trackers</p>
         </q-item>
-        <q-item class="advantages-section__item" >
+        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
           <p>Complete work <b>transparency</b></p>
         </q-item>
-        <q-item class="advantages-section__item" >
+        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
           <p>Creatives as a <b>bonus</b>, adaptive configurations</p>
         </q-item>
-        <q-item class="advantages-section__item" >
+        <q-item class="advantages-section__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
           <p><b>Purchasing</b> forms срс, срм, vcpm</p>
         </q-item>
       </q-list>
@@ -178,8 +179,8 @@
 
     <section class="faq-section">
       <div class="faq-section__container container">
-        <h2 class="faq-section__title title custom-font" >FAQ</h2>
-        <q-list class="faq-section__list">
+        <h2 class="faq-section__title title custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">FAQ</h2>
+        <q-list class="faq-section__list" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
           <q-expansion-item
             expand-separator
             label="What formats/configurations do you provide with?"
@@ -283,7 +284,9 @@
             </q-card>
           </q-expansion-item>
         </q-list>
-        <q-btn class="faq-section__main-btn main-btn main-btn--green main-btn--wide">
+        <q-btn
+          class="faq-section__main-btn main-btn main-btn--green main-btn--wide"
+               data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
           Advertise with us
         </q-btn>
       </div>
@@ -291,8 +294,8 @@
 
     <section class="features-section">
       <div class="features-section__container container">
-        <h2 class="features-section__title title custom-font" >Unique proprietary RTB engine and technologies</h2>
-        <q-list class="features-section__list" >
+        <h2 class="features-section__title title custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Unique proprietary RTB engine and technologies</h2>
+        <q-list class="features-section__list" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
           <q-item class="features-section__item">
             <p>
               more than <b>15,000</b> own sites, which allows you to purchase inventory without surcharges
@@ -329,36 +332,36 @@
 
     <section class="control-section">
       <div class="control-section__container container">
-        <h2 class="control-section__title title title--white custom-font" >Advertising placement control</h2>
-        <p class="control-section__intro intro intro--bold intro--white" >Brand safety</p>
+        <h2 class="control-section__title title title--white custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Advertising placement control</h2>
+        <p class="control-section__intro intro intro--bold intro--white" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Brand safety</p>
         <div class="control-section__block">
-          <div class="control-section__block-item" >
+          <div class="control-section__block-item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
             <h3 >Fraud and unnecessary content brands’ protection</h3>
             <q-list class="control-section__block-list">
-              <q-item class="control-section__block-list-item" >
+              <q-item class="control-section__block-list-item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
                 <p>Brand protection from fraud and unnecessary content</p>
               </q-item>
-              <q-item class="control-section__block-list-item" >
+              <q-item class="control-section__block-list-item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
                 <p>Context filters</p>
               </q-item>
-              <q-item class="control-section__block-list-item" >
+              <q-item class="control-section__block-list-item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
                 <p>Black lists</p>
               </q-item>
-              <q-item class="control-section__block-list-item" >
+              <q-item class="control-section__block-list-item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
                 <p>Manual optimization of each advertising campaign</p>
               </q-item>
-              <q-item class="control-section__block-list-item" >
+              <q-item class="control-section__block-list-item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
                 <p>Filtering by keywords, page content</p>
               </q-item>
             </q-list>
           </div>
-          <div class="control-section__block-item" >
+          <div class="control-section__block-item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
             <h3 >High quality of our traffic confirmed</h3>
             <div class="control-section__block-sign" >
               <p>Antifrod A</p>
             </div>
             <p>Proprietary Fraud Protection System - Antifrod A</p>
-            <div class="control-section__block-imgs" >
+            <div class="control-section__block-imgs" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
               <img class="control-section__block-img" src="~assets/main/weborama.jpg" srcset="~assets/main/weborama.jpg 1x, ~assets/main/weborama-2x.jpg 2x" alt="weborama">
               <img class="control-section__block-img" src="~assets/main/adriver.jpg" srcset="~assets/main/adriver.jpg 1x, ~assets/main/adriver-2x.jpg 2x" alt="adriver">
               <img class="control-section__block-img" src="~assets/main/sizmek.jpg" srcset="~assets/main/sizmek.jpg 1x, ~assets/main/sizmek-2x.jpg 2x" alt="sizmek">
@@ -368,6 +371,7 @@
         </div>
         <q-btn
           class="control-section__main-btn main-btn main-btn--green main-btn--wide"
+          data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"
         >
           Advertise with us
         </q-btn>
@@ -378,17 +382,14 @@
 
 <script setup lang="ts">
 import { onMounted } from 'vue';
-import ImgSlider from 'components/ImgSlider.vue';
 import GeoSlider from 'components/GeoSlider.vue';
 import TargetingSlider from 'components/TargetingSlider.vue';
-import PartnersSlider from 'components/PartnersSlider.vue';
-import ContactsSlider from 'components/ContactsSlider.vue';
-// const AOS = require('aos');
-// import {useRouter} from 'vue-router';
+const AOS = require('aos');
+import {useRouter} from 'vue-router';
 
-// const router = useRouter();
+const router = useRouter();
 
-// onMounted(() => {
-//   AOS.init();
-// })
+onMounted(() => {
+  AOS.init();
+})
 </script>
