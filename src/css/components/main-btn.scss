@@ -97,6 +97,10 @@
 
   &--wide {
     min-width: 255px;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
   }
 
   &--mob {

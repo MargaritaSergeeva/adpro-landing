@@ -326,73 +326,54 @@
         </q-list>
       </div>
     </section>
+
+    <section class="control-section">
+      <div class="control-section__container container">
+        <h2 class="control-section__title title title--white custom-font" >Advertising placement control</h2>
+        <p class="control-section__intro intro intro--bold intro--white" >Brand safety</p>
+        <div class="control-section__block">
+          <div class="control-section__block-item" >
+            <h3 >Fraud and unnecessary content brands’ protection</h3>
+            <q-list class="control-section__block-list">
+              <q-item class="control-section__block-list-item" >
+                <p>Brand protection from fraud and unnecessary content</p>
+              </q-item>
+              <q-item class="control-section__block-list-item" >
+                <p>Context filters</p>
+              </q-item>
+              <q-item class="control-section__block-list-item" >
+                <p>Black lists</p>
+              </q-item>
+              <q-item class="control-section__block-list-item" >
+                <p>Manual optimization of each advertising campaign</p>
+              </q-item>
+              <q-item class="control-section__block-list-item" >
+                <p>Filtering by keywords, page content</p>
+              </q-item>
+            </q-list>
+          </div>
+          <div class="control-section__block-item" >
+            <h3 >High quality of our traffic confirmed</h3>
+            <div class="control-section__block-sign" >
+              <p>Antifrod A</p>
+            </div>
+            <p>Proprietary Fraud Protection System - Antifrod A</p>
+            <div class="control-section__block-imgs" >
+              <img class="control-section__block-img" src="~assets/main/weborama.jpg" srcset="~assets/main/weborama.jpg 1x, ~assets/main/weborama-2x.jpg 2x" alt="weborama">
+              <img class="control-section__block-img" src="~assets/main/adriver.jpg" srcset="~assets/main/adriver.jpg 1x, ~assets/main/adriver-2x.jpg 2x" alt="adriver">
+              <img class="control-section__block-img" src="~assets/main/sizmek.jpg" srcset="~assets/main/sizmek.jpg 1x, ~assets/main/sizmek-2x.jpg 2x" alt="sizmek">
+            </div>
+            <p>Application of third party verifiers: Weborama, AdRiver, Sizmek and others</p>
+          </div>
+        </div>
+        <q-btn
+          class="control-section__main-btn main-btn main-btn--green main-btn--wide"
+        >
+          Advertise with us
+        </q-btn>
+      </div>
+    </section>
   </q-page>
-<!--    <section class="control-section">-->
-<!--      <div class="control-section__container container">-->
-<!--        <h2 class="control-section__title title title&#45;&#45;white custom-font" >Контроль за размещением рекламы</h2>-->
-<!--        <p class="control-section__intro intro intro&#45;&#45;bold intro&#45;&#45;white" >Brand safety</p>-->
-<!--        <div class="control-section__block">-->
-<!--          <div class="control-section__block-item" >-->
-<!--            <h3 >Защита бренда от фрода и ненужного контента</h3>-->
-<!--            <q-list class="control-section__block-list">-->
-<!--              <q-item class="control-section__block-list-item" >-->
-<!--                <p>Стоимость размещения ниже, чем на других платформах</p>-->
-<!--              </q-item>-->
-<!--              <q-item class="control-section__block-list-item" >-->
-<!--                <p>Применение контекстных фильтров</p>-->
-<!--              </q-item>-->
-<!--              <q-item class="control-section__block-list-item" >-->
-<!--                <p>Black lists</p>-->
-<!--              </q-item>-->
-<!--              <q-item class="control-section__block-list-item" >-->
-<!--                <p>Ручная оптимизация каждой рекламной кампании</p>-->
-<!--              </q-item>-->
-<!--              <q-item class="control-section__block-list-item" >-->
-<!--                <p>Фильтрация по ключевым словам, контенту страницы</p>-->
-<!--              </q-item>-->
-<!--            </q-list>-->
-<!--          </div>-->
-<!--          <div class="control-section__block-item" >-->
-<!--            <h3 >Высокое качество нашего трафика подтверждено</h3>-->
-<!--            <div class="control-section__block-sign" >-->
-<!--              <p>Антифрод А</p>-->
-<!--            </div>-->
-<!--            <p >Собственная система предотвращения фрода – Антифрод А</p>-->
-<!--            <div class="control-section__block-imgs" >-->
-<!--              <img class="control-section__block-img" src="~assets/main/weborama.jpg" srcset="~assets/main/weborama.jpg 1x, ~assets/main/weborama-2x.jpg 2x" alt="weborama">-->
-<!--              <img class="control-section__block-img" src="~assets/main/adriver.jpg" srcset="~assets/main/adriver.jpg 1x, ~assets/main/adriver-2x.jpg 2x" alt="adriver">-->
-<!--              <img class="control-section__block-img" src="~assets/main/sizmek.jpg" srcset="~assets/main/sizmek.jpg 1x, ~assets/main/sizmek-2x.jpg 2x" alt="sizmek">-->
-<!--            </div>-->
-<!--            <p >Применение верификаторов третьих сторон Weborama, AdRiver, Sizmek или других</p>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <q-btn-->
-<!--          class="control-section__main-btn main-btn main-btn&#45;&#45;blue main-btn&#45;&#45;wide"-->
-<!--          data-aos="fade-up"-->
-<!--          data-aos-anchor-placement="top-center"-->
-<!--          data-aos-duration="1000"-->
-<!--          data-aos-once="true"-->
-<!--          @click="router.push({name: 'registration'})"-->
-<!--        >-->
-<!--          Разместить рекламу-->
-<!--        </q-btn>-->
-<!--      </div>-->
-<!--    </section>-->
-<!--    <section class="partners-section container">-->
-<!--      <h2 class="partners-section__title title custom-font" >Наши партнеры</h2>-->
-<!--      <div >-->
-<!--        <PartnersSlider/>-->
-<!--      </div>-->
-<!--    </section>-->
-<!--    <section class="contacts-section">-->
-<!--      <div class="contacts-section__container container">-->
-<!--        <h2 class="contacts-section__title title custom-font" >Контакты</h2>-->
-<!--        <div >-->
-<!--          <ContactsSlider/>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </section>-->
-<!--  </q-page>-->
 </template>
 
 <script setup lang="ts">
