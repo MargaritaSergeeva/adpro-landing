@@ -13,7 +13,6 @@
 
 
 const { configure } = require('quasar/wrappers');
-require('dotenv').config()
 
 module.exports = configure(function (ctx) {
   return {
@@ -153,9 +152,9 @@ module.exports = configure(function (ctx) {
       // chainWebpackCustomSW (/* chain */) {},
 
       manifest: {
-        name: 'NativeLab',
-        short_name: 'NativeLab',
-        description: '',
+        name: 'AdProfex',
+        short_name: 'AdProfex',
+        description: 'AdProfex',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',

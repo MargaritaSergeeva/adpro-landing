@@ -1,12 +1,11 @@
 .main-header {
-  position: relative;
+  position: fixed;
   background-color: $bg-color;
-  padding-bottom: 12px;
 
   &::before {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 0;
     width: 100%;
     height: 10px;
@@ -76,7 +75,7 @@
 
   @media(max-width: 767px) {
     padding-top: 8px;
-    padding-bottom: 18px;
+    padding-bottom: 8px;
 
     &__block {
       min-height: 0;

@@ -13,8 +13,7 @@
     padding-right: 10px;
     background-color: transparent;
     box-shadow: none;
-    border: 1px solid #ffffff;
-    border-top: 5px solid $bg-dark-color;
+    border: 4px solid #ffffff;
     border-radius: 0;
   }
 
@@ -63,10 +62,10 @@
     z-index: 10;
     top: 50%;
     transform: translateY(-50%);
-    left: 0;
-    width: 22px;
-    height: 34px;
-    //background-image: url('~assets/main/prev.svg');
+    left: 40px;
+    width: 8px;
+    height: 20px;
+    background-image: url('~assets/main/prev.svg');
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
@@ -82,10 +81,10 @@
     z-index: 1000;
     top: 50%;
     transform: translateY(-50%);
-    right: 0;
-    width: 22px;
-    height: 34px;
-    //background-image: url('~assets/main/next.svg');
+    right: 40px;
+    width: 8px;
+    height: 20px;
+    background-image: url('~assets/main/next.svg');
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
@@ -101,20 +100,18 @@
       width: 73%;
     }
 
-    &__card {
-      border-top: 3px solid $bg-dark-color;
-    }
-
     &__prev {
-      width: 13px;
+      width: 9px;
       height: 19px;
       background-size: contain;
+      left: 12px;
     }
 
     &__next {
-      width: 13px;
+      width: 9px;
       height: 19px;
       background-size: contain;
+      right: 12px;
     }
   }
 }

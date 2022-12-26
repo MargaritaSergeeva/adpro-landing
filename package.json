@@ -1,14 +1,17 @@
 {
-  "name": "NativeLab project",
+  "name": "ad-profex_project",
   "version": "0.0.1",
-  "description": "NativeLab project",
-  "productName": "NativeLab",
+  "description": "AdProfex project",
+  "productName": "AdProfex",
   "author": "Margarita Sergeeva <margaritk@inbox.ru>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.ts,.vue ./",
     "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "echo \"No test specified\" && exit 0",
+    "build": "yarn quasar build",
+    "force-build": "NO_LINT=1 yarn quasar build",
+    "dev": "yarn quasar dev"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",

@@ -1,26 +1,69 @@
 <template>
-  <h1>hhh</h1>
-<!--  <q-page class="main-page">-->
-<!--    <section class="main-page__main-section main-section ">-->
-<!--      <div class="main-section__container container">-->
-<!--        <div class="main-section__text-block">-->
-<!--          <h1><span class="custom-font main-section__title main-title">NativеLab –</span> платформа нативной рекламы.</h1>-->
-<!--          <p class="main-section__text">Более <b>6 лет</b> опыта на международном рекламном рынке!</p>-->
-<!--          <q-btn class="main-btn main-btn&#45;&#45;blue main-btn&#45;&#45;desktop" @click="router.push({name: 'contacts'})">получить презентацию и кейсы</q-btn>-->
-<!--        </div>-->
-<!--        <div class="main-section__img-block">-->
-<!--          <ImgSlider/>-->
-<!--        </div>-->
-<!--        <q-btn class="main-btn main-btn&#45;&#45;blue main-btn&#45;&#45;mob" @click="router.push({name: 'contacts'})">получить презентацию и кейсы</q-btn>-->
-<!--      </div>-->
-<!--    </section>-->
-<!--    <section class="geo-section container">-->
-<!--      <h2 class="geo-section__title title custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Широкий охват ГЕО</h2>-->
-<!--      <p class="geo-section__intro intro" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Мы предлагаем рекламодателям качественный нативный трафик из более чем 22 стран мира</p>-->
-<!--      <div class="geo-section__slider-block" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">-->
-<!--        <GeoSlider/>-->
-<!--      </div>-->
-<!--    </section>-->
+  <q-page class="main-page">
+    <section class="main-page__main-section main-section ">
+      <div class="main-section__container container">
+        <div class="main-section__text-block">
+          <h1><span class="custom-font main-section__title main-title">AdProfex –</span> Native Advertising Platform</h1>
+          <p class="main-section__text">More than <b>6 years</b> of experience <br>in the international advertising market</p>
+          <q-btn class="main-btn main-btn--green main-btn--green--main main-btn--desktop" @click="router.push({name: 'contacts'})">Get presentation and cases</q-btn>
+        </div>
+        <div class="main-section__img-block">
+          <div class="main-section__img-block-bg">
+            <img class="main-section__img-block-figure1" src="~assets/main/main-rectangle-1.png" srcset="~assets/main/main-rectangle-1.png 1x, ~assets/main/main-rectangle-1-2x.png 2x" alt="rectangle-1">
+            <img class="main-section__img-block-figure2" src="~assets/main/main-rectangle-2.svg" srcset="~assets/main/main-rectangle-2.png 1x, ~assets/main/main-rectangle-2-2x.png 2x" alt="rectangle-2">
+            <img class="main-section__img-block-figure3" src="~assets/main/main-rectangle-3.svg" srcset="~assets/main/main-rectangle-3.png 1x, ~assets/main/main-rectangle-3-2x.png 2x" alt="rectangle-3">
+            <img class="main-section__img-block-figure5" src="~assets/main/main-ellipse-1.svg" srcset="~assets/main/main-ellipse-1.png 1x, ~assets/main/main-ellipse-1-2x.png 2x" alt="ellipse-1">
+            <img class="main-section__img-block-figure4" src="~assets/main/main-rectangle-4.svg" alt="rectangle-4">
+            <img class="main-section__img-block-figure6" src="~assets/main/main-ellipse-2.svg" alt="ellipse-2">
+            <img class="main-section__img-block-figure7" src="~assets/main/main-ellipse-3.svg" alt="ellipse-3">
+            <img class="main-section__img-block-figure8" src="~assets/main/main-ellipse-4.svg" alt="ellipse-4">
+          </div>
+          <div class="main-section__img-block-content">
+            <q-list class="main-section__img-block-list">
+              <q-item class="main-section__img-block-item custom-font">
+                <p>
+                  <b class="main-section__img-block-text main-section__img-block-text--yellow">2&nbsp;million&nbsp;+</b>
+                  <span>clicks daily</span>
+                </p>
+              </q-item>
+              <q-item class="main-section__img-block-item custom-font">
+                <p>
+                  <b class="main-section__img-block-text">418 million</b>
+                  <span>unique users</span>
+                </p>
+              </q-item>
+              <q-item class="main-section__img-block-item custom-font">
+                <p>
+                  <b class="main-section__img-block-text">2760</b>
+                  <span>own sites</span>
+                </p>
+                <p>
+                  <b class="main-section__img-block-text custom-font">8050</b>
+                  <span>partner sites</span>
+                </p>
+              </q-item>
+              <q-item class="main-section__img-block-item custom-font">
+                <p>
+                  <b class="main-section__img-block-text">3 billion</b>
+                  <span>ad block displays</span>
+                </p>
+              </q-item>
+            </q-list>
+          </div>
+        </div>
+        <q-btn class="main-btn main-btn--green main-btn--mob" @click="router.push({name: 'contacts'})">Get presentation and cases</q-btn>
+      </div>
+    </section>
+
+    <section class="geo-section container">
+      <h2 class="geo-section__title title custom-font">Broad GEO coverage</h2>
+      <p class="geo-section__intro intro">We offer advertisers quality native traffic from more than 22 countries</p>
+      <div class="geo-section__slider-block">
+        <GeoSlider/>
+      </div>
+    </section>
+
+  </q-page>
 <!--    <section class="targeting-section">-->
 <!--      <div class="targeting-section__container container">-->
 <!--        <h2 class="targeting-section__title title title&#45;&#45;white custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Форматы и таргетинги</h2>-->
@@ -375,17 +418,17 @@
 </template>
 
 <script setup lang="ts">
-// import { onMounted } from 'vue';
-// import ImgSlider from 'components/ImgSlider.vue';
-// import GeoSlider from 'components/GeoSlider.vue';
-// import TargetingSlider from 'components/TargetingSlider.vue';
-// import PartnersSlider from 'components/PartnersSlider.vue';
-// import ContactsSlider from 'components/ContactsSlider.vue';
+import { onMounted } from 'vue';
+import ImgSlider from 'components/ImgSlider.vue';
+import GeoSlider from 'components/GeoSlider.vue';
+import TargetingSlider from 'components/TargetingSlider.vue';
+import PartnersSlider from 'components/PartnersSlider.vue';
+import ContactsSlider from 'components/ContactsSlider.vue';
 // const AOS = require('aos');
 // import {useRouter} from 'vue-router';
-//
+
 // const router = useRouter();
-//
+
 // onMounted(() => {
 //   AOS.init();
 // })
