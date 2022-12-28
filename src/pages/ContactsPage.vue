@@ -2,21 +2,21 @@
   <q-page class="contacts-page">
     <section class="main-contacts-section container">
       <div class="main-contacts-section__item">
-        <h1 class="custom-font main-contacts-section__title main-title">Контакты</h1>
+        <h1 class="custom-font main-contacts-section__title main-title">Contacts</h1>
         <div class="main-contacts-section__map map-block">
-<!--          <div class="map-block__map">-->
-<!--            <img src="~assets/contacts/map.jpg" srcset="~assets/contacts/map.jpg 1x, ~assets/contacts/map-2x.jpg 2x" alt="map">-->
-<!--            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.1165981024583!2d38.94657153982445!3d45.053133946636656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04f68294faaab%3A0x54163e19aa6a107f!2z0JrRgNCw0YHQvdGL0YUg0J_QsNGA0YLQuNC30LDQvSwzNjc!5e0!3m2!1sru!2sru!4v1670957331848!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
-<!--          </div>-->
-          <p>350049, г. Краснодар,<br> ул. Красных Партизан, д. 367, пом. 613</p>
+          <div class="map-block__map">
+            <img src="~assets/contacts/map.jpg" alt="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d815.404147255466!2d33.357495829225954!3d35.16618169510296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14de1757a757762f%3A0xbb1e41a00906969!2sThemistokli%20Dervi%2017-19-HOUSE%2C%202nd%20floor%201066%2C%20Nicosia%2C%20%D0%9A%D0%B8%D0%BF%D1%80!5e0!3m2!1sru!2sru!4v1672241081109!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <p>Themistokli Dervi, 17-19 THE CITY HOUSE, 2nd floor 1066, Nicosia, Cyprus</p>
         </div>
       </div>
       <div class="main-contacts-section__item main-contacts-section__item--big">
-        <h2>Остались вопросы? Мы поможем.</h2>
-        <p>Чтобы получить презентацию, кейсы или у Вас есть вопросы, заполните форму:</p>
+        <h2>Any questions left? We are ready to help.</h2>
+        <p>To receive a presentation, cases or you have questions, fill out the form:</p>
         <q-form class="main-contacts-section__form contacts-form" @submit="submit">
           <div class="contacts-form__group">
-            <label for="name" class="contacts-form__label label">Имя и фамилия</label>
+            <label for="name" class="contacts-form__label label">First and last name</label>
             <q-input
               ref="nameInputRef"
               v-model="contactsFormData.name"
@@ -41,7 +41,7 @@
               ></q-input>
             </div>
             <div class="contacts-form__group">
-              <label for="phone" class="contacts-form__label label">Телефон</label>
+              <label for="phone" class="contacts-form__label label">Phone</label>
               <q-input
                 ref="phoneInputRef"
                 v-model="contactsFormData.phone"
@@ -55,7 +55,7 @@
             </div>
           </div>
           <div class="contacts-form__group">
-            <label for="company" class="contacts-form__label label">Название компании</label>
+            <label for="company" class="contacts-form__label label">Company name</label>
             <q-input
               ref="nameCompanyInputRef"
               v-model="contactsFormData.company"
@@ -67,7 +67,7 @@
             ></q-input>
           </div>
           <div class="contacts-form__group">
-            <label for="text" class="contacts-form__label label">Ваше сообщение</label>
+            <label for="text" class="contacts-form__label label">Your message</label>
             <q-input
               v-model="contactsFormData.text"
               id="text"
@@ -77,28 +77,9 @@
               type="textarea"
             ></q-input>
           </div>
-          <q-btn class="contacts-form__main-btn main-btn main-btn--blue main-btn--wide" type="submit">Отправить</q-btn>
+          <q-btn class="contacts-form__main-btn main-btn main-btn--green main-btn--wide" type="submit">Send</q-btn>
         </q-form>
       </div>
-    </section>
-    <section class="our-contacts-section container">
-      <q-list class="our-contacts-section__list">
-        <q-item
-          v-for="contact in contactsData"
-          :key="contact.name"
-          class="our-contacts-section__item">
-          <img class="our-contacts-section__img" :src="'img/' + contact.photo + '.png'" :srcset="'img/' + contact.photo + '.png 1x, img/' + contact.photo +'-2x.png 2x'" alt="photo">
-          <div class="our-contacts-section__name-block">
-            <p class="our-contacts-section__name"><b>{{contact.name}}</b></p>
-            <p>{{contact.job}}</p>
-          </div>
-          <div class="our-contacts-section__contact-block">
-            <a :href="'mailto:'+ contact.email">Email: {{contact.email}}</a>
-            <a :href="'https://t.me/'+ contact.telegram">Телеграм: @{{contact.telegram}}</a>
-            <a :href="'tel:'+ contact.tel2">Телефон: {{contact.tel}}</a>
-          </div>
-        </q-item>
-      </q-list>
     </section>
   </q-page>
 </template>
@@ -121,27 +102,6 @@ const contactsFormData = ref<contactsFormData>({
   company: '',
   text: '',
 });
-
-const contactsData = [
-  {
-    name: 'Черная Наталья',
-    job: 'Руководитель по привлечению рекламодателей',
-    email: 'n.ch@nativelab.ru',
-    tel: '+7 985 0733393',
-    tel2: '89850733393',
-    telegram: 'Nata_chernayaa',
-    photo: 'photo1',
-  },
-  {
-    name: 'Душин Виктор',
-    job: 'CEO',
-    email: 'ceo@nativelab.ru',
-    tel: '+7 964 8921672',
-    tel2: '89648921672',
-    telegram: 'sgrlive',
-    photo: 'photo2',
-  },
-];
 
 const nameInputRef = ref();
 const emailInputRef = ref();
