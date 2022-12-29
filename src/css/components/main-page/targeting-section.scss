@@ -6,6 +6,10 @@
 
   &--pubs {
     background-image: url('~assets/pubs/pubs-targeting-bg.png');
+
+    .targeting-section__container {
+      padding-bottom: 77px;
+    }
   }
 
   &__container {
@@ -146,6 +150,22 @@
     position: relative;
     background-image: none;
 
+    &--pubs {
+      .targeting-section__container {
+        padding-bottom: 8px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 552px;
+        left: -8px;
+        width: 30px;
+        height: 30px;
+        background-image: url('~assets/main/orange-rectangle.svg');
+      }
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -164,6 +184,22 @@
       width: 30px;
       height: 30px;
       background-image: url('~assets/main/orange-rectangle.svg');
+    }
+
+    &--pubs {
+      .targeting-section__container {
+        padding-bottom: 8px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 548px;
+        left: -8px;
+        width: 30px;
+        height: 30px;
+        background-image: url('~assets/main/orange-rectangle.svg');
+      }
     }
 
     &__container {
