@@ -1,0 +1,27 @@
+.countries-section {
+  padding-top: 70px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 156px;
+
+  &__title {
+    margin-bottom: 105px;
+  }
+
+  @media (max-width: 1023px) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 57px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 91px;
+
+    &__title {
+      margin-bottom: 52px;
+    }
+
+  }
+}

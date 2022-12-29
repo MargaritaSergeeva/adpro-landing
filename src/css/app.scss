@@ -107,6 +107,7 @@ input[type="radio"].visually-hidden {
   font-weight: 600;
   text-align: center;
   color: $text-bold-color;
+  letter-spacing: 0;
 
   &--white {
     color: #ffffff;
@@ -419,3 +420,5 @@ select:-webkit-autofill:focus {
 @import "components/auth/registration-page";
 @import "components/auth/registration-stepper";
 @import "components/pubs-page/pubs-main-section";
+@import "components/pubs-page/countries-section";
+@import "components/pubs-page/countries-slider";

@@ -4,6 +4,10 @@
   background-repeat: no-repeat;
   background-position: calc(50% - 5px) 193px;
 
+  &--pubs {
+    background-image: url('~assets/pubs/pubs-targeting-bg.png');
+  }
+
   &__container {
     padding-top: 153px;
     padding-bottom: 139px;
