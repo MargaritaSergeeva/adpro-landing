@@ -130,16 +130,16 @@ const checkValidate = computed(() => {
 });
 
 const rules = {
-  required: (v: boolean | undefined) => !!v || 'Поле обязательно для заполнения',
+  required: (v: boolean | undefined) => !!v || 'required field',
   minLen: (minLen: number) => (v: string) => {
-    return v.length >= minLen || `Минимум ${minLen} символов`;
+    return v.length >= minLen || `minimum ${minLen} characters`;
   },
   maxLen: (maxLen: number) => (v: string) => {
-    return v.length <= maxLen || `Максимум ${maxLen} символов`;
+    return v.length <= maxLen || `maximum ${maxLen} characters`;
   },
   email: (v: string) => {
     const emailPattern = /.+@.+\..+$/;
-    return emailPattern.test(v) || 'Неверный формат email';
+    return emailPattern.test(v) || 'Invalid email format';
   },
 };
 </script>
