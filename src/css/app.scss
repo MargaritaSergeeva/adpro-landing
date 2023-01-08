@@ -44,7 +44,7 @@ input[type="radio"].visually-hidden {
 }
 
 .logo {
-  padding-top: 63px;
+  padding-top: 35px;
   text-align: center;
 
   img {
@@ -52,7 +52,7 @@ input[type="radio"].visually-hidden {
   }
 
   @media(max-width: 767px) {
-    padding-top: 38px;
+    padding-top: 25px;
     img {
       width: 109px;
     }
@@ -311,9 +311,9 @@ input[type="number"]:focus {
 }
 
 .checkbox {
-  align-items: flex-start;
-  font-size: 14px;
-  line-height: 140%;
+  align-items: center;
+  font-size: 12px;
+  line-height: 18px;
 
   .q-checkbox__inner {
     width: 18px;
@@ -344,6 +344,10 @@ input[type="number"]:focus {
     color: $text-color;
   }
 
+  a {
+    color: $text-color;
+  }
+
   @media(max-width: 767px) {
     font-size: 12px;
     line-height: 140%;
@@ -355,15 +359,15 @@ input[type="number"]:focus {
   background-color: transparent;
 
   .q-btn {
-    border-bottom: 2px solid transparent;
-    font-size: 14px;
+    border-bottom: 4px solid transparent;
+    font-size: 18px;
     line-height: 140%;
-    padding-bottom: 10px;
+    padding-bottom: 4px;
     transition: 0.3s all;
   }
 
   .q-btn.bg-none {
-    border-bottom: 2px solid $main-color;
+    border-bottom: 4px solid $main-color;
     text-shadow: 0 0 1px $text-bold-color;
   }
 
@@ -373,6 +377,16 @@ input[type="number"]:focus {
 
   .q-ripple {
     display: none;
+  }
+
+  @media (max-width: 767px) {
+    .q-btn {
+      border-bottom: 4px solid transparent;
+      font-size: 14px;
+      line-height: 140%;
+      padding-bottom: 11px;
+      transition: 0.3s all;
+    }
   }
 }
 
@@ -391,6 +405,7 @@ select:-webkit-autofill:focus {
 
 @import "components/guest-layout";
 @import "components/main-layout";
+@import "components/cookies-dialog";
 @import "components/main-header";
 @import "components/essential-link";
 @import "components/main-btn";
@@ -418,9 +433,11 @@ select:-webkit-autofill:focus {
 @import "components/auth/login-page";
 @import "components/auth/login-form";
 @import "components/auth/registration-page";
-@import "components/auth/registration-stepper";
+@import "components/auth/registration-form";
 @import "components/pubs-page/pubs-main-section";
 @import "components/pubs-page/countries-section";
 @import "components/pubs-page/countries-slider";
 @import "components/pubs-page/ad-efficiency";
 @import "components/pubs-page/personal-acc";
+@import "components/pubs-page/offer";
+@import "components/auth/privacy-policy-page";

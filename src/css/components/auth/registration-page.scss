@@ -1,19 +1,16 @@
 .registration-page {
-  padding-bottom: 112px;
-  &__stepper-wrapper {
-    max-width: 718px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+  padding-top: 66px;
+  padding-bottom: 117px;
 
   &__title {
-    margin-bottom: 80px;
+    margin-bottom: 73px;
   }
 
   @media(max-width: 767px) {
-    padding-bottom: 42px;
+    padding-top: 40px;
+    padding-bottom: 52px;
     &__title {
-      margin-bottom: 55px;
+      margin-bottom: 48px;
     }
   }
 }

@@ -26,9 +26,14 @@
     min-height: 50px;
     min-width: 98px;
     transition: 0.3s all;
+    background-color: transparent !important;
 
     &:hover {
       opacity: 0.6;
+    }
+
+    @media(max-width: 767px) {
+      border-width: 1px;
     }
   }
 

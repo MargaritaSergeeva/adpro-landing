@@ -1,6 +1,6 @@
 <template>
   <div class="login-page">
-    <h1 class="login-page__title guest-title custom-font">Вход в личный кабинет</h1>
+    <h1 class="login-page__title guest-title custom-font">Enter your personal account</h1>
     <div class="login-page__form-wrapper">
       <q-form class="login-page__form login-form" @submit.prevent.stop="onSubmit">
         <div class="login-page__btn-toggle btn-toggle">
@@ -13,8 +13,8 @@
             toggle-color="none"
             toggle-text-color="#333333"
             :options="[
-            {label: 'Рекламодатель', value: UserRoles.ADVERTISER},
-            {label: 'Рекламное агенство', value: UserRoles.AGENCY_CLIENT}
+            {label: 'Publisher', value: UserRoles.PUBLISHER},
+            {label: 'Advertiser', value: UserRoles.ADVERTISER}
           ]"
           ></q-btn-toggle>
         </div>
@@ -34,7 +34,7 @@
           <small v-if="formErrors.email" class="text-red">{{ formErrors.email }}</small>
         </div>
         <div class="login-form__group">
-          <label class="label">Пароль</label>
+          <label class="label">Password</label>
           <q-input
             ref="passwordInputRef"
             v-model="formData.password"
@@ -74,7 +74,7 @@
           </q-input>
           <small v-if="formErrors.password" class="text-red">{{ formErrors.password }}</small>
         </div>
-        <q-btn class="login-form__main-btn main-btn main-btn--blue main-btn--wide" type="submit">Войти</q-btn>
+        <q-btn class="login-form__main-btn main-btn main-btn--green main-btn--wide" type="submit">Enter</q-btn>
 
         <q-inner-loading
           :showing="processing"
@@ -83,9 +83,8 @@
       </q-form>
 
       <div class="login-page__links">
-        <router-link to="/auth/registration">Регистрация</router-link>
-        <router-link to="/">Главная</router-link>
-<!--        <router-link to="/auth/forgot-password">Забыли пароль?</router-link>-->
+        <router-link to="/auth/registration">Registration</router-link>
+<!--        <router-link to="/auth/forgot-password">Forgot your password?</router-link>-->
       </div>
     </div>
   </div>
@@ -118,7 +117,7 @@ const processing = ref(false);
 const formData = reactive<Credentials>({
   email: '',
   password: '',
-  role: UserRoles.AGENCY_CLIENT,
+  role: UserRoles.PUBLISHER,
 });
 
 const formErrors = ref<CredentialsErrors>({

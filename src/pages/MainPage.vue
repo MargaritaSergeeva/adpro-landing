@@ -138,6 +138,7 @@
         <q-btn
           class="targeting-section__main-btn main-btn main-btn--green main-btn--wide"
           data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"
+          @click="router.push({name: 'registration'})"
         >
           Advertise with us
         </q-btn>
@@ -286,7 +287,8 @@
         </q-list>
         <q-btn
           class="faq-section__main-btn main-btn main-btn--green main-btn--wide"
-               data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
+          data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"
+          @click="router.push({name: 'registration'})">
           Advertise with us
         </q-btn>
       </div>
@@ -372,6 +374,7 @@
         <q-btn
           class="control-section__main-btn main-btn main-btn--green main-btn--wide"
           data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"
+          @click="router.push({name: 'registration'})"
         >
           Advertise with us
         </q-btn>

@@ -1,331 +1,113 @@
 <template>
   <div class="registration-page">
-    <div class="registration-page__stepper-wrapper">
-      <q-stepper
-        v-model="step"
-        ref="stepper"
-        color="primary"
-        animated
-        header-class="hidden"
-        class="registration-stepper"
-      >
-        <q-step
-          :name="1"
-          :done="step > 1"
-          class="registration-stepper__step registration-stepper__step--first"
-        >
-          <h1 class="registration-page__title guest-title custom-font">Регистрация</h1>
-
-          <div class="registration-stepper__item">
-            <q-select
-              :options="USER_TYPES"
-              map-options
-              emit-value
-              option-value="id"
-              option-label="name"
-              v-model="registrationData.userType"
-              class="registration-stepper__select select"
-              popup-content-class="select__menu"
-              options-selected-class="select__option"
-              dropdown-icon="keyboard_arrow_down"
-              square
-              borderless
-            />
-          </div>
-          <div
-            class="registration-stepper__item registration-stepper__item--last"
+    <h1 class="registration-page__title guest-title custom-font">Registration</h1>
+    <q-form class="registration-page__form registration-form" @submit.prevent.stop="onSubmit">
+      <div class="registration-form__form-wrapper">
+        <div class="registration-form__group">
+          <label class="label">Company Name</label>
+          <q-input
+            ref="organizationNameInputRef"
+            v-model="registrationData.organization_name"
+            dense
+            square
+            borderless
+            bottom-slots
+            lazy-rules
+            class="input"
+            :rules="[rules.required, rules.minLen(3), rules.maxLen(60)]"
+          />
+        </div>
+        <div class="registration-form__group">
+          <label class="label">Password</label>
+          <q-input
+            ref="passwordInputRef"
+            v-model="registrationData.password"
+            :type="isPassword ? 'password' : 'text'"
+            lazy-rules
+            dense
+            square
+            borderless
+            class="input"
+            :rules="[rules.required, rules.minLen(8)]"
+            @keydown.space.prevent
           >
-            <q-select
-              :options="ORGANIZATION_TYPES"
-              map-options
-              emit-value
-              option-value="id"
-              option-label="name"
-              v-model="registrationData.organizationType"
-              class="registration-stepper__select select"
-              popup-content-class="select__menu"
-              options-selected-class="select__option"
-              dropdown-icon="keyboard_arrow_down"
-              square
-              borderless
-              @update:model-value="registrationData.conditions='offer'"
-            />
-          </div>
-        </q-step>
+            <template #append>
+              <q-icon
+                class="cursor-pointer"
+                :style="{color: isPassword ? '#C4C4C4' : '#5D5FEF'}"
+                @click="isPassword = !isPassword"
+              >
+                <div v-if="!isPassword" class="login-form__eye-visible">
+                  <svg width="16" height="16" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.9603 9.95985C10.8207 10.8285 9.43306 11.3098 8.00033 11.3332C3.33366 11.3332 0.666992 5.99985 0.666992 5.99985C1.49625 4.45445 2.64642 3.10426 4.04033 2.03985M6.60033 0.826521C7.05921 0.719107 7.52904 0.665413 8.00033 0.666521C12.667 0.666521 15.3337 5.99985 15.3337 5.99985C14.929 6.75693 14.4464 7.46968 13.8937 8.12652M9.41366 7.41319C9.23056 7.60969 9.00976 7.76729 8.76443 7.8766C8.5191 7.98591 8.25426 8.04469 7.98572 8.04943C7.71718 8.05417 7.45043 8.00477 7.2014 7.90418C6.95236 7.80359 6.72614 7.65387 6.53622 7.46396C6.34631 7.27404 6.19659 7.04782 6.096 6.79878C5.99541 6.54975 5.94601 6.283 5.95075 6.01446C5.95549 5.74592 6.01426 5.48108 6.12358 5.23575C6.23289 4.99042 6.39049 4.76962 6.58699 4.58652"
+                      stroke="#999999" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div v-else class="login-form__eye-invisible">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.9603 11.9599C10.8207 12.8285 9.43306 13.3098 8.00033 13.3332C3.33366 13.3332 0.666992 7.99985 0.666992 7.99985C1.49625 6.45445 2.64642 5.10426 4.04033 4.03985M6.60033 2.82652C7.05921 2.71911 7.52904 2.66541 8.00033 2.66652C12.667 2.66652 15.3337 7.99985 15.3337 7.99985C14.929 8.75693 14.4464 9.46968 13.8937 10.1265M9.41366 9.41319C9.23056 9.60969 9.00976 9.76729 8.76443 9.8766C8.5191 9.98591 8.25426 10.0447 7.98572 10.0494C7.71718 10.0542 7.45043 10.0048 7.2014 9.90418C6.95236 9.80359 6.72614 9.65387 6.53622 9.46396C6.34631 9.27404 6.19659 9.04782 6.096 8.79878C5.99541 8.54975 5.94601 8.283 5.95075 8.01446C5.95549 7.74592 6.01426 7.48108 6.12358 7.23575C6.23289 6.99042 6.39049 6.76962 6.58699 6.58652"
+                      stroke="#999999" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M0.666992 0.666504L15.3337 15.3332" stroke="#999999" stroke-width="1.33333"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </q-icon>
+            </template>
+          </q-input>
+        </div>
+        <div class="registration-form__group">
+          <label class="label">Business email</label>
+          <q-input
+            ref="emailInputRef"
+            v-model="registrationData.email"
+            type="email"
+            dense
+            square
+            borderless
+            class="input"
+            :rules="[rules.required, rules.email]"
+            @keydown.space.prevent
+          />
+        </div>
+        <div class="registration-form__group">
+          <label class="label">Telephone number</label>
+          <q-input
+            ref="phoneInputRef"
+            v-model="registrationData.phone"
+            dense
+            square
+            borderless
+            bottom-slots
+            lazy-rules
+            type="number"
+            :rules="[rules.required]"
+            class="input"
+          />
+        </div>
+      </div>
 
-        <q-step
-          :name="2"
-          :done="step > 2"
-          class="registration-stepper__step"
+        <q-btn class="registration-form__main-btn main-btn main-btn--green main-btn--wide" type="submit">To Register</q-btn>
+
+        <div class="registration-form__checkbox">
+        <q-checkbox
+          v-model="registrationData.is_privacy_policy_agreed"
+          class="checkbox"
+          dense
+          checked-icon="done"
         >
-          <div class="registration-stepper__fix-height"
-               :class="{'registration-stepper__fix-height--hidden' : registrationData.organizationType === OrganizationTypes.SOLE_ENTREPRENEUR}">
-            <div v-if="registrationData.organizationType === OrganizationTypes.LLC"
-                 class="registration-stepper__group registration-stepper__group--rules">
-              <label class="label">Наименование организации</label>
-              <q-input
-                ref="organizationNameInputRef"
-                v-model="registrationData.llc_name"
-                dense
-                square
-                borderless
-                bottom-slots
-                lazy-rules
-                class="input"
-                :rules="[rules.required, rules.minLen(3), rules.maxLen(60)]"
-              />
-            </div>
-          </div>
-          <div class="registration-stepper__block-wrapper">
-            <div class="registration-stepper__block">
-              <div v-if="registrationData.organizationType === OrganizationTypes.SOLE_ENTREPRENEUR"
-                   class="registration-stepper__group registration-stepper__group--rules">
-                <label class="label">Наименование</label>
-                <q-input
-                  ref="organizationInputRef"
-                  v-model="registrationData.sole_entrepreneur_name"
-                  dense
-                  square
-                  borderless
-                  bottom-slots
-                  lazy-rules
-                  class="input"
-                  :rules="[rules.required, rules.minLen(3), rules.maxLen(60)]"
-                />
-              </div>
-              <div class="registration-stepper__group registration-stepper__group--rules">
-                <label class="label">ФИО</label>
-                <q-input
-                  ref="nameInputRef"
-                  v-model="registrationData.user_name"
-                  dense
-                  square
-                  borderless
-                  bottom-slots
-                  lazy-rules
-                  class="input"
-                  :rules="[rules.required, rules.minLen(3), rules.maxLen(60)]"
-                />
-              </div>
-              <div class="registration-stepper__group registration-stepper__group--rules">
-                <label class="label">Электронная почта</label>
-                <q-input
-                  ref="emailInputRef"
-                  v-model="registrationData.email"
-                  type="email"
-                  dense
-                  square
-                  borderless
-                  bottom-slots
-                  lazy-rules
-                  class="input"
-                  :rules="[rules.required, rules.email]"
-                  @keydown.space.prevent
-                />
-              </div>
-              <div v-if="registrationData.organizationType === OrganizationTypes.LLC"
-                   class="registration-stepper__group registration-stepper__group--rules">
-                <label class="label">ИНН</label>
-                <q-input
-                  ref="innInputRef"
-                  v-model="registrationData.inn"
-                  type="number"
-                  dense
-                  square
-                  borderless
-                  bottom-slots
-                  lazy-rules
-                  class="input"
-                  :rules="[rules.required, rules.inn]"
-                  @keydown.space.prevent
-                />
-              </div>
-            </div>
-            <div class="registration-stepper__block">
-              <div class="registration-stepper__group registration-stepper__group--rules">
-                <label class="label">Телефон</label>
-                <q-input
-                  ref="phoneInputRef"
-                  v-model="registrationData.contact"
-                  dense
-                  square
-                  borderless
-                  bottom-slots
-                  lazy-rules
-                  :rules="[rules.required]"
-                  class="input"
-                  mask="+7 (###) ### - ####"
-                />
-              </div>
-              <div class="registration-stepper__group registration-stepper__group--rules">
-                <label class="label">Пароль</label>
-                <q-input
-                  ref="passwordInputRef"
-                  v-model="registrationData.password"
-                  dense
-                  square
-                  borderless
-                  bottom-slots
-                  lazy-rules
-                  type="password"
-                  class="input"
-                  :rules="[rules.required, rules.minLen(8)]"
-                  @keydown.space.prevent
-                />
-              </div>
-              <div class="registration-stepper__group registration-stepper__group--rules">
-                <label class="label">Повторить пароль</label>
-                <q-input
-                  ref="confirmedPasswordInputRef"
-                  v-model="registrationData.password_confirmation"
-                  dense
-                  square
-                  borderless
-                  bottom-slots
-                  lazy-rules
-                  type="password"
-                  class="input"
-                  :rules="[rules.required, rules.password, rules.minLen(8)]"
-                  @keydown.space.prevent
-                />
-              </div>
-            </div>
-          </div>
+          <template #default>
+            Accept <router-link to="privacy-policy">privacy policy</router-link>
+          </template>
+        </q-checkbox>
+      </div>
 
-        </q-step>
-
-        <q-step
-          :name="3"
-          :done="step > 3"
-          :disable="registrationData.userType === UserRoles.AGENCY_CLIENT"
-          class="registration-stepper__step registration-stepper__step--short registration-stepper__step--big-padding"
-        >
-          <div class="registration-stepper__group">
-            <q-radio
-              v-model="registrationData.conditions"
-              class="radio"
-              val="offer"
-              label="Готов работать по оферте">
-            </q-radio>
-            <q-radio
-              class="radio"
-              v-model="registrationData.conditions"
-              val="contract"
-              label="Нужен физический договор">
-            </q-radio>
-          </div>
-        </q-step>
-
-        <q-step
-          :name="4"
-          :done="step > 4"
-          :disable="registrationData.userType === UserRoles.AGENCY_CLIENT || registrationData.conditions === Conditions.OFFER"
-          class="registration-stepper__step registration-stepper__step--short registration-stepper__step--big-padding"
-        >
-          <div class="registration-stepper__group">
-            <label class="label">Электронная почта</label>
-            <q-input
-              ref="emailContractInputRef"
-              v-model="registrationData.email_for_contract"
-              type="email"
-              dense
-              square
-              borderless
-              class="input"
-              :rules="[rules.required, rules.email]"
-              @keydown.space.prevent
-            />
-          </div>
-        </q-step>
-
-        <q-step
-          :name="5"
-          :done="step > 5"
-          :disable="registrationData.conditions === Conditions.CONTRACT"
-          class="registration-stepper__step registration-stepper__step--padding"
-        >
-          <p
-            v-if="registrationData.userType === UserRoles.AGENCY"
-            class="registration-stepper__text"
-          >
-            <a href="https://docs.google.com/document/d/19UySEsCoO5IHLrYbWPCJaBnezKXBmDSc6PUusSRazZo/edit"
-              target="_blank">Оферта</a> для рекламных агентств
-          </p>
-          <p
-            v-if="registrationData.userType === UserRoles.AGENCY"
-            class="registration-stepper__text"
-          >
-            <a href="https://docs.google.com/document/d/1A9rhilL3w2Yw6hhg-88RYgulk7fyWeK79t-FGaEkbZs/edit"
-               target="_blank">Договор</a> об оказании услуг информационного взаимодействия с ОРД
-          </p>
-          <p class="registration-stepper__text">
-            <a href="https://docs.google.com/document/d/1q6J4pqJj6V6t0qBzcNGthO4xoYPkseox7SKdFNcGIFc/edit"
-              target="_blank">Правила</a> оказания услуг для рекламных агентств
-          </p>
-          <div class="registration-stepper__item registration-stepper__item--checkbox">
-            <q-checkbox
-              v-model="registrationData.is_contract_agreed"
-              class="checkbox"
-              dense
-              checked-icon="done"
-            >
-              <template #default>
-                Проставление вами галочки подтверждает, что вы прочитали и полностью безоговорочно принимаете условия
-                следующих документов:
-                <span v-if="registrationData.userType === UserRoles.AGENCY">1) оферту для рекламных агентств,</span><span v-if="registrationData.userType === UserRoles.AGENCY">2)</span> правила оказания услуг
-                для рекламных агентств <span v-if="registrationData.userType === UserRoles.AGENCY">3) договор об оказании услуг информационного взаимодействия с ОРД</span>
-              </template>
-            </q-checkbox>
-          </div>
-          <p class="registration-stepper__text">
-            <a href="https://docs.google.com/document/d/1GLuPKtIPD_DJX0Qt2FyHc3p659D7JVnnioKWExqz_58/edit"
-               target="_blank">Политика конфиденциальности</a>
-          </p>
-          <div class="registration-stepper__item registration-stepper__item--checkbox">
-            <q-checkbox
-              v-model="registrationData.is_privacy_policy_agreed"
-              class="checkbox"
-              dense
-              checked-icon="done"
-            >
-              <template #default>
-                Проставление вами галочки свидетельствует о том, что вы прочитали и полностью безоговорочно принимаете
-                условия политики конфиденциальности
-              </template>
-            </q-checkbox>
-          </div>
-        </q-step>
-
-        <q-step
-          :name="6"
-          class="registration-stepper__step registration-stepper__step--big-padding"
-        >
-          <p class="registration-stepper__text">
-            Вы являетесь рекламораспространителем или оператором рекламной системы?
-          </p>
-
-          <div class="registration-stepper__btn-wrapper">
-            <q-btn class="registration-stepper__main-btn main-btn main-btn--transparent"
-                   @click="registrationData.is_advertising_system=false; onSubmit()">Нет
-            </q-btn>
-            <q-btn class="registration-stepper__main-btn main-btn main-btn--transparent"
-                   @click="registrationData.is_advertising_system=true; onSubmit()">Да
-            </q-btn>
-          </div>
-        </q-step>
-
-        <template v-slot:navigation>
-          <q-stepper-navigation
-            class="registration-stepper__nav"
-            :class="{'registration-stepper__nav--short': step === 1 || step === 3 || step === 4 }">
-            <q-btn v-if="step > 1" class="registration-stepper__nav-btn registration-stepper__nav-btn--back" flat
-                   @click="$refs.stepper.previous()" label="Назад"></q-btn>
-            <q-btn v-if="step !== 6" class="registration-stepper__nav-btn" @click="toNext"
-                   :label="step === 4 ? 'Запросить договор' : 'Далее'"></q-btn>
-          </q-stepper-navigation>
-        </template>
-      </q-stepper>
-    </div>
+      <q-inner-loading
+        :showing="processing"
+        label-class="text-teal"
+        label-style="font-size: 1.1em"/>
+    </q-form>
   </div>
 </template>
 
@@ -335,104 +117,50 @@ import {ref, computed, reactive} from 'vue';
 import {useAuth} from '@websanova/vue-auth';
 import axios from 'axios';
 import {Validate} from 'src/common/validateErrors';
-import {UserRoles, OrganizationTypes, Conditions} from 'src/types/user.type';
 
 interface RegistrationDataInterface {
-  userType: number,
-  organizationType: number,
-  llc_name: string | null,
-  sole_entrepreneur_name: string | null,
-  user_name: string,
-  contact: string,
-  contact_type: string,
+  organization_name: string,
+  phone: string,
   email: string,
   password: string,
-  password_confirmation: string,
-  inn: string | null,
-  is_contract_agreed: boolean,
   is_privacy_policy_agreed: boolean,
-  email_for_contract: string | null,
-  is_advertising_system: boolean,
-  conditions: string,
-  currency: string,
 }
 
 interface FormErrorsInterface {
   email: string;
   password: string,
-  contact: string,
-  inn: string,
-  email_for_contract: string,
+  phone: string,
 }
 
-const ORGANIZATION_TYPES = [
-  {
-    id: 1,
-    name: 'ООО',
-  },
-  {
-    id: 2,
-    name: 'ИП',
-  },
-];
-
-const USER_TYPES = [
-  {
-    id: 1,
-    name: 'Клиент рекламного агентства'
-  },
-  {
-    id: 2,
-    name: 'Рекламное агенство'
-  },
-];
 
 const auth = useAuth();
-const step = ref<number>(1);
-const stepper = ref();
 const processing = ref(false);
+const isPassword = ref(true);
 
 const organizationNameInputRef = ref();
-const organizationInputRef = ref()
-const nameInputRef = ref()
-const innInputRef = ref()
 const emailInputRef = ref()
 const phoneInputRef = ref()
 const passwordInputRef = ref();
-const confirmedPasswordInputRef = ref();
-const emailContractInputRef = ref();
 
 const registrationData = reactive<RegistrationDataInterface>({
-  userType: 1,
-  organizationType: 1,
-  llc_name: null,
-  sole_entrepreneur_name: null,
-  user_name: '',
-  contact: '',
-  contact_type: 'telephone',
+  organization_name: '',
+  phone: '',
   email: '',
   password: '',
-  password_confirmation: '',
-  inn: null,
-  is_contract_agreed: true,
   is_privacy_policy_agreed: true,
-  conditions: 'offer',
-  email_for_contract: null,
-  is_advertising_system: false,
-  currency: '1',
 });
 
 const formErrors = ref<FormErrorsInterface>({
   email: '',
   password: '',
-  contact: '',
-  inn: '',
-  email_for_contract: '',
+  phone: '',
 })
 
 async function onSubmit() {
+  if (!checkValidate.value) {
+    return
+  }
   processing.value = true;
-
   await auth.register({
     data: {...registrationData},
     autoLogin: true,
@@ -462,32 +190,6 @@ const checkValidate = computed(() => (...inputs: any[]) => {
   }, []);
 });
 
-const toNext = () => {
-  switch (step.value) {
-    case 2:
-      if (registrationData.organizationType === OrganizationTypes.LLC &&
-        checkValidate.value(organizationNameInputRef.value, nameInputRef.value, innInputRef.value, emailInputRef.value, phoneInputRef.value, passwordInputRef.value, confirmedPasswordInputRef.value)) {
-        stepper.value.next();
-      } else if (registrationData.organizationType === OrganizationTypes.SOLE_ENTREPRENEUR &&
-        checkValidate.value(organizationInputRef.value, nameInputRef.value, emailInputRef.value, phoneInputRef.value, passwordInputRef.value, confirmedPasswordInputRef.value)) {
-        stepper.value.next();
-      }
-      break;
-    case 4:
-      if (checkValidate.value(emailContractInputRef.value)) {
-        stepper.value.next();
-      }
-      break;
-    case 5:
-      if (registrationData.is_contract_agreed && registrationData.is_privacy_policy_agreed) {
-        stepper.value.next()
-      }
-      break;
-    default:
-      stepper.value.next()
-  }
-};
-
 const rules = {
   required: (v: boolean | undefined) => !!v || 'Поле обязательно для заполнения',
   minLen: (minLen: number) => (v: string) => {
@@ -496,16 +198,9 @@ const rules = {
   maxLen: (maxLen: number) => (v: string) => {
     return v.length <= maxLen || `Максимум ${maxLen} символов`;
   },
-  inn: (v: string) => {
-    const innPattern = /^[\d+]{10,12}$/;
-    return innPattern.test(v) || 'Неверный формат ИНН';
-  },
   email: (v: string) => {
     const emailPattern = /.+@.+\..+$/;
     return emailPattern.test(v) || 'Неверный формат email';
   },
-  password: (v: string) => {
-    return v === registrationData.password || 'Пароли не совпадают';
-  }
 };
 </script>

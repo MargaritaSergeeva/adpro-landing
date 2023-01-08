@@ -18,7 +18,7 @@
           />
           <small v-if="formErrors.email" class="text-red">{{ formErrors.email }}</small>
         </div>
-        <q-btn class="login-form__main-btn main-btn main-btn--blue main-btn--wide" type="submit">Отправить ссылку</q-btn>
+        <q-btn class="login-form__main-btn main-btn main-btn--green main-btn--wide" type="submit">Отправить ссылку</q-btn>
 
         <q-inner-loading
           :showing="processing"

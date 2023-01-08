@@ -83,7 +83,7 @@
           </q-input>
           <small v-if="formErrors.password" class="text-red">{{ formErrors.password }}</small>
         </div>
-        <q-btn class="login-form__main-btn main-btn main-btn--blue main-btn--wide" type="submit">Продолжить</q-btn>
+        <q-btn class="login-form__main-btn main-btn main-btn--green main-btn--wide" type="submit">Продолжить</q-btn>
 
         <q-inner-loading
           :showing="processing"

@@ -8,6 +8,12 @@
 
   &__main-btn {
     width: 100%;
-    margin-top: 26px;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 767px) {
+    &__main-btn {
+      margin-top: 42px;
+    }
   }
 }

@@ -33,20 +33,20 @@
       </div>
     </section>
     <section class="countries-section container">
-      <h2 class="countries-section__title title custom-font">Countries we cooperate with</h2>
-      <div>
+      <h2 class="countries-section__title title custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Countries we cooperate with</h2>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
         <CountriesSlider/>
       </div>
     </section>
 
     <section class="targeting-section targeting-section--pubs">
       <div class="targeting-section__container container">
-        <h2 class="targeting-section__title title title--white custom-font">Configuration</h2>
-        <p class="targeting-section__intro intro intro--white">TGB • TGB In-Read</p>
-        <div class="targeting-section__desktop">
+        <h2 class="targeting-section__title title title--white custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Configuration</h2>
+        <p class="targeting-section__intro intro intro--white" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">TGB • TGB In-Read</p>
+        <div class="targeting-section__desktop" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
           <TargetingSlider/>
         </div>
-        <div class="targeting-section__mob">
+        <div class="targeting-section__mob" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
           <q-list class="targeting-section__mob-list">
             <q-item class="targeting-section__mob-item">
               <picture>
@@ -85,14 +85,14 @@
     </section>
 
     <section class="ad-efficiency">
-      <h2 class="ad-efficiency__title title custom-font">New Ad efficiency</h2>
+      <h2 class="ad-efficiency__title title custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">New Ad efficiency</h2>
       <div class="ad-efficiency__container container">
         <div class="ad-efficiency__block">
           <div class="ad-efficiency__inner">
-            <img class="ad-efficiency__img" src="~assets/pubs/content-blackout.svg" alt="Content blackout">
-            <h3 class="ad-efficiency__inner-title">Content blackout</h3>
+            <img class="ad-efficiency__img" src="~assets/pubs/content-blackout.svg" alt="Content blackout" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
+            <h3 class="ad-efficiency__inner-title" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Content blackout</h3>
           </div>
-          <p class="ad-efficiency__inner-text">
+          <p class="ad-efficiency__inner-text" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
             This block could raise yields by 25%. When a block appears on the user's screen, all content around is
             darkened and attention is focused on advertising, thereby causing a desire to click on this block. Due to
             this, CTR and your income are growing.
@@ -100,10 +100,10 @@
         </div>
         <div class="ad-efficiency__block">
           <div class="ad-efficiency__inner">
-            <img class="ad-efficiency__img" src="~assets/pubs/autoload.svg" alt="Auto load">
-            <h3 class="ad-efficiency__inner-title">Auto-load of teasers</h3>
+            <img class="ad-efficiency__img" src="~assets/pubs/autoload.svg" alt="Auto load" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
+            <h3 class="ad-efficiency__inner-title" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Auto-load of teasers</h3>
           </div>
-          <p class="ad-efficiency__inner-text">
+          <p class="ad-efficiency__inner-text" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
             Put the block at the end of the article and as soon as the user gets to it - he will load new blocks with
             ads, thereby allowing the user to see more ads, increasing the likelihood of a click.
           </p>
@@ -111,19 +111,19 @@
       </div>
     </section>
     <section class="personal-acc">
-      <h2 class="personal-acc__title title custom-font">Convenient personal account</h2>
+      <h2 class="personal-acc__title title custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Convenient personal account</h2>
       <div class="personal-acc__container container">
         <div class="personal-acc__block">
-          <h3 class="personal-acc__inner-title">Block constructor</h3>
-          <q-list class="personal-acc__list">
+          <h3 class="personal-acc__inner-title" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Block constructor</h3>
+          <q-list class="personal-acc__list" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
             <q-item class="personal-acc__item">Perform automatic A/B tests in a few clicks;</q-item>
             <q-item class="personal-acc__item">More than 20 ready-made adaptive templates.</q-item>
           </q-list>
         </div>
         <div class="personal-acc__block">
-          <h3 class="personal-acc__inner-title">Detailed analytics</h3>
-          <p class="personal-acc__inner-text">Analyze income by a variety of parameters:</p>
-          <q-list class="personal-acc__inner-list">
+          <h3 class="personal-acc__inner-title" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Detailed analytics</h3>
+          <p class="personal-acc__inner-text" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Analyze income by a variety of parameters:</p>
+          <q-list class="personal-acc__inner-list" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
             <q-item class="personal-acc__inner-item">Websites</q-item>
             <q-item class="personal-acc__inner-item">Blocks</q-item>
             <q-item class="personal-acc__inner-item">Devices</q-item>
@@ -131,8 +131,8 @@
           </q-list>
         </div>
         <div class="personal-acc__block">
-          <h3 class="personal-acc__inner-title">Finance</h3>
-          <q-list class="personal-acc__list">
+          <h3 class="personal-acc__inner-title" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">Finance</h3>
+          <q-list class="personal-acc__list" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
             <q-item class="personal-acc__item">Compliance with the EDR</q-item>
             <q-item class="personal-acc__item">Convenient payments including to the current account</q-item>
             <q-item class="personal-acc__item">Compliance with tax legislation</q-item>
@@ -140,14 +140,33 @@
         </div>
       </div>
       <q-btn class="personal-acc__main-btn main-btn main-btn--green"
+             data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"
              @click="router.push({name: 'registration'})">Try our service
       </q-btn>
+    </section>
+    <section class="offer">
+      <h2 class="offer__title title title--white custom-font" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">We offer</h2>
+      <div class="offer__container container">
+        <q-list class="offer__list" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
+          <q-item class="offer__item">High quality advertising</q-item>
+          <q-item class="offer__item">Convenient ways of outputting income</q-item>
+          <q-item class="offer__item">A wide selection of high-yield templates</q-item>
+          <q-item class="offer__item">Bypassing automatic ad blocking systems</q-item>
+          <q-item class="offer__item">Technical support 24/7</q-item>
+        </q-list>
+        <q-btn class="offer__main-btn main-btn main-btn--green"
+               data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"
+               @click="router.push({name: 'registration'})">Register
+        </q-btn>
+      </div>
     </section>
   </q-page>
 </template>
 
 <script setup lang="ts">
+import {useRouter} from 'vue-router';
 import CountriesSlider from 'src/components/CountriesSlider.vue';
 import TargetingSlider from 'components/TargetingSlider.vue';
 
+const router = useRouter();
 </script>

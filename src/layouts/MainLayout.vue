@@ -1,4 +1,5 @@
 <template>
+  <CookiesDialog/>
   <q-layout class="main-layout" view="lHh Lpr lFf">
     <MainHeader/>
     <q-page-container style="flex: 1 0 auto;">
@@ -9,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
+import CookiesDialog from 'components/CookiesDialog.vue';
 import MainHeader from 'components/MainHeader.vue';
 import MainFooter from 'components/MainFooter.vue';
-
 </script>
