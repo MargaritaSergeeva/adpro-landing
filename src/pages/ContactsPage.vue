@@ -139,7 +139,7 @@ const rules = {
   },
   email: (v: string) => {
     const emailPattern = /.+@.+\..+$/;
-    return emailPattern.test(v) || 'Invalid email format';
+    return emailPattern.test(v) || 'invalid email format';
   },
 };
 </script>

@@ -43,7 +43,8 @@
         <div class="cookies-dialog__second-tab">
           <q-btn class="cookies-dialog__close-btn" flat round color="grey" icon="close" @click="tab='firstTab'"/>
           <h3 class="custom-font">Your cookie preferences</h3>
-          <p class="cookies-dialog__second-tab-text">We use cookies to ensure basic functionality of the website and to enhance your online experience. For each category, you may choose to opt-in/out whenever you want.</p>
+          <p class="cookies-dialog__second-tab-text">We use cookies to ensure basic functionality of the website and to
+            enhance your online experience. For each category, you may choose to opt-in/out whenever you want.</p>
           <a href="#">Cookie policy</a>
           <div class="cookies-dialog__expansion-item-block">
             <q-expansion-item
@@ -52,7 +53,8 @@
             >
               <q-card>
                 <q-card-section>
-                  These cookies are essential for the proper functioning of this website. They do not contain personal data and are not used to track you.
+                  These cookies are essential for the proper functioning of this website. They do not contain personal
+                  data and are not used to track you.
                 </q-card-section>
               </q-card>
             </q-expansion-item>
