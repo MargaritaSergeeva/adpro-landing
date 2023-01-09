@@ -1,0 +1,26 @@
+---
+all:
+  children:
+    adsbid_prod_sing:
+      hosts:
+        rtb-dsw21-ovh:
+          ansible_ssh_host: 15.235.145.71
+          ansible_ssh_port: 61111
+          ansible_python_interpreter: /usr/bin/python3
+        rtb-dsw22-ovh:
+          ansible_ssh_host: 15.235.145.72
+          ansible_ssh_port: 61111
+          ansible_python_interpreter: /usr/bin/python3
+        rtb-dsw23-ovh:
+          ansible_ssh_host: 15.235.145.85
+          ansible_ssh_port: 61111
+          ansible_python_interpreter: /usr/bin/python3
+        rtb-dsw24-ovh:
+          ansible_ssh_host: 15.235.165.96
+          ansible_ssh_port: 61111
+          ansible_python_interpreter: /usr/bin/python3
+        rtb-dsw25-ovh:
+          ansible_ssh_host: 15.235.165.85
+          ansible_ssh_port: 61111
+          ansible_python_interpreter: /usr/bin/python3
+

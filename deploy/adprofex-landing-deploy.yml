@@ -1,0 +1,7 @@
+---
+- name: DEPLOY - SING - ADPROFEX-LANDING
+  tags: sing
+  hosts: adsbid_prod_sing
+  remote_user: adsbid-deploy
+  roles:
+    - role: adprofex_landing

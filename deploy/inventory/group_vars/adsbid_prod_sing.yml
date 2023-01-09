@@ -1,0 +1,17 @@
+---
+# Common Constants
+adprofex_landing_tag: sing
+adprofex_landing_placement_constraints: []
+adprofex_landing_networks:
+  - rtb-app-net
+
+# Common Variables
+adprofex_landing_reservations_cpus: "0.1"
+adprofex_landing_reservations_memory: "0.1G"
+adprofex_landing_limits_cpus: "1"
+adprofex_landing_limits_memory: "1G"
+adprofex_landing_mode: replicated
+adprofex_landing_replicas: 1
+
+# Common ENV
+# adprofex_landing_env_EXAMPLE: EXAMPLE

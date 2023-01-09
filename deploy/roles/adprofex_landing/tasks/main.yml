@@ -1,0 +1,58 @@
+---
+- name: "Docker login in {{ docker_registry.address }}"
+  run_once: true
+  docker_login:
+    registry: "{{ docker_registry.address }}"
+    username: "{{ docker_registry.username }}"
+    password: "{{ docker_registry.password }}"
+  check_mode: false
+
+- name: "Deploy adprofex_landing:{{ adprofex_landing_tag }} service"
+  run_once: true
+  docker_swarm_service:
+    name: "{{ adprofex_landing_service_name }}"
+    resolve_image: true
+    image: "{{ docker_registry.address }}/adsbid/adprofex-landing:{{ adprofex_landing_tag }}"
+    restart_config:
+      condition: on-failure
+      delay: 3s
+      window: 10s
+    healthcheck:
+      test: "{{ adprofex_landing_healthcheck_test_command }}"
+      interval: "{{ adprofex_landing_healthcheck_interval }}"
+      retries: "{{ adprofex_landing_healthcheck_retries }}"
+      start_period: "{{ adprofex_landing_healthcheck_start_period }}"
+      timeout: "{{ adprofex_landing_healthcheck_timeout }}"
+    update_config:
+      order: "{{ adprofex_landing_update_config_order }}"
+      parallelism: "{{ adprofex_landing_update_config_parallelism }}"
+      failure_action: "{{ adprofex_landing_update_config_failure_action }}"
+      delay: "{{ adprofex_landing_update_config_delay }}"
+      monitor: "{{ adprofex_landing_update_config_monitor }}"
+      max_failure_ratio: "{{ adprofex_landing_update_config_max_failure_ratio }}"
+    rollback_config:
+      order: "{{ adprofex_landing_rollback_config_order }}"
+      parallelism: "{{ adprofex_landing_rollback_config_parallelism }}"
+      failure_action: "{{ adprofex_landing_rollback_config_failure_action }}"
+      delay: "{{ adprofex_landing_rollback_config_delay }}"
+      monitor: "{{ adprofex_landing_rollback_config_monitor }}"
+      max_failure_ratio: "{{ adprofex_landing_rollback_config_max_failure_ratio }}"
+    endpoint_mode: "{{ adprofex_landing_endpoint_mode }}"
+    mode: "{{ adprofex_landing_mode }}"
+    replicas: "{{ adprofex_landing_replicas }}"
+    reservations:
+      cpus: "{{ adprofex_landing_reservations_cpus }}"
+      memory: "{{ adprofex_landing_reservations_memory }}"
+    limits:
+      cpus: "{{ adprofex_landing_limits_cpus }}"
+      memory: "{{ adprofex_landing_limits_memory }}"
+    placement:
+      constraints:
+        "{{ adprofex_landing_placement_constraints }}"
+    networks:
+      "{{ adprofex_landing_networks }}"
+    mounts:
+      - {source: /etc/timezone, target: /etc/timezone, readonly: true}
+      - {source: /etc/localtime, target: /etc/localtime, readonly: true}
+    # env:
+    #   EXAMPLE: "{{ adprofex_landing_env_EXAMPLE }}"
