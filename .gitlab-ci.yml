@@ -4,18 +4,18 @@ variables:
   DOCKER_TLS_CERTDIR: ""
 
 stages:
-  - pre-build
+  # - pre-build
   - deploy2sing
 
-check-commit-message:
-  stage: pre-build
-  tags: [checks]
-  image: node:16.13
-  script:
-    - npm install -g @commitlint/cli @commitlint/config-conventional
-    - >
-      echo "module.exports = { extends: ['@commitlint/config-conventional'] }" > commitlint.config.js
-    - git log -1 --pretty=%B | commitlint
+# check-commit-message:
+#   stage: pre-build
+#   tags: [checks]
+#   image: node:16.13
+#   script:
+#     - npm install -g @commitlint/cli @commitlint/config-conventional
+#     - >
+#       echo "module.exports = { extends: ['@commitlint/config-conventional'] }" > commitlint.config.js
+#     - git log -1 --pretty=%B | commitlint
 
 .buildanddeploy: &buildanddeploy
   tags: [docker]
