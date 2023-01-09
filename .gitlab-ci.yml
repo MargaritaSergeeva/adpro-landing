@@ -1,0 +1,48 @@
+---
+variables:
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: ""
+
+stages:
+  - pre-build
+  - deploy2sing
+
+check-commit-message:
+  stage: pre-build
+  tags: [checks]
+  image: node:16.13
+  script:
+    - npm install -g @commitlint/cli @commitlint/config-conventional
+    - >
+      echo "module.exports = { extends: ['@commitlint/config-conventional'] }" > commitlint.config.js
+    - git log -1 --pretty=%B | commitlint
+
+.buildanddeploy: &buildanddeploy
+  tags: [docker]
+  services:
+    - docker:19.03.15-dind
+  image: reg.techhprof.ru/profitclicks/dockeransible:latest
+  when: manual
+  script:
+    - docker login -u $DOCKER_USER -p "$DOCKER_PASSWORD" $DOCKER_REGISTRY
+    - cp ${ENV} .env
+    - docker build -t ${DOCKER_REGISTRY}/adsbid/adprofex-landing:${CI_ENVIRONMENT_SLUG} -f ./build/Dockerfile-build .
+    - docker push ${DOCKER_REGISTRY}/adsbid/adprofex-landing:${CI_ENVIRONMENT_SLUG}
+    - chmod 600 ${SSH_DEPLOY_KEY}
+    - export ANSIBLE_HOST_KEY_CHECKING=False
+    - cp ${ANSIBLE_ENV} extra_vars.json
+    - >
+      ansible-playbook deploy/adprofex-landing-deploy.yml
+      --diff
+      --private-key=${SSH_DEPLOY_KEY}
+      --inventory deploy/inventory/inventory.yml
+      --tags ${CI_ENVIRONMENT_SLUG}
+      --extra-vars "@extra_vars.json"
+  allow_failure: true
+
+adprofex-landing-buildanddeploy2sing:
+  <<: *buildanddeploy
+  stage: deploy2sing
+  environment:
+    name: sing
+
