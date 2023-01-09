@@ -41,6 +41,11 @@ const routes: RouteRecordRaw[] = [
         component: () => import('pages/auth/RegistrationPage.vue')
       },
       {
+        path: 'success-register',
+        name: 'success-register',
+        component: () => import('pages/auth/SuccessRegister.vue')
+      },
+      {
         path: 'privacy-policy',
         name: 'privacy-policy',
         component: () => import('pages/auth/PrivacyPolicyPage.vue')

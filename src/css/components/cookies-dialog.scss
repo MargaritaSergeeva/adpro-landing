@@ -115,6 +115,10 @@
         margin-bottom: 20px;
         background-color: $bg-color;
 
+        .q-focus-helper {
+          display: none;
+        }
+
         .q-item {
           padding-top: 24px;
           padding-bottom: 24px;
@@ -162,8 +166,11 @@
         }
 
         .q-toggle__inner {
-          padding-top: 10px;
+          padding-top: 0;
+          padding-bottom: 0;
           padding-left: 9px;
+          height: 20px;
+          width: auto;
           .q-toggle__track {
             opacity: 1;
             height: 20px;
@@ -171,6 +178,17 @@
             border-radius: 10px;
             background-color: lightgrey;
           }
+
+          .q-toggle__thumb {
+            top: 2px;
+            left: 0.25em;
+            width: 16px;
+            height: 16px;
+          }
+        }
+
+        .q-toggle__inner--truthy .q-toggle__thumb {
+          left: 0.75em;
         }
 
         .q-toggle__inner--truthy .q-toggle__thumb:after {
@@ -286,10 +304,6 @@
         margin-bottom: 75px;
         .q-expansion-item {
           margin-bottom: 20px;
-
-          .q-focus-helper {
-            display: none;
-          }
 
           .q-item {
             padding-top: 15px;
