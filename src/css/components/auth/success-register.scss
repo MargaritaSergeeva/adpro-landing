@@ -1,0 +1,63 @@
+.success-register {
+  max-width: 500px;
+  padding-top: 131px;
+  padding-bottom: 152px;
+
+  h1 {
+    position: relative;
+    margin: 0;
+    margin-bottom: 65px;
+    padding-left: 160px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 140%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 50px;
+      width: 72px;
+      height: 72px;
+      background-image: url('~assets/success.svg');
+      background-size: contain;
+    }
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+  }
+
+  a {
+    color: $text-color;
+  }
+
+  @media(max-width: 767px) {
+    padding-top: 101px;
+    padding-bottom: 106px;
+    h1 {
+      max-width: 330px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 45px;
+      padding-left: 116px;
+      font-size: 23px;
+      line-height: 140%;
+
+      &::before {
+        top: 5px;
+        left: 45px;
+        width: 51px;
+        height: 51px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+}

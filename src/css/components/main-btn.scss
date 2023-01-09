@@ -1,0 +1,124 @@
+.main-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 23px;
+  padding-right: 23px;
+  min-height: 50px;
+  text-transform: none;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 19px;
+  transition: 0.3s all;
+
+  .q-focus-helper {
+    display: none;
+  }
+
+  &::before {
+    display: none;
+  }
+
+  &--transparent {
+    color: $main-color;
+    font-weight: 600;
+    border: 2px solid $main-color;
+    min-height: 50px;
+    min-width: 98px;
+    transition: 0.3s all;
+    background-color: transparent !important;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    @media(max-width: 767px) {
+      border-width: 1px;
+    }
+  }
+
+  &--simple {
+    padding-right: 0;
+    border: none;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: none;
+    color: $text-bold-color;
+
+    &:hover {
+      text-shadow:  0 0 1px $text-bold-color;
+    }
+
+    .q-focus-helper {
+      display: none;
+    }
+
+    .q-ripple {
+      display: none;
+    }
+  }
+
+  &--black {
+    background-color: $text-bold-color;
+
+    &:hover {
+      background-color: $main-color;
+    }
+  }
+
+  &--green {
+    font-family: "PlusJakartaSans", "Arial", sans-serif;
+    background-color: $main-color;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+
+    &--main {
+      padding-left: 41px;
+      padding-right: 41px;
+    }
+
+    &--mini {
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 30px;
+      padding-right: 30px;
+      min-height: 40px;
+    }
+
+    &:hover {
+      background-color: #00A023;
+      box-shadow: none;
+    }
+
+    @media (max-width: 767px) {
+      padding-left: 16px;
+      padding-right: 16px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+
+  &--wide {
+    min-width: 255px;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  &--mob {
+    display: none;
+
+    @media (max-width: 999px) {
+      display: flex;
+    }
+  }
+
+  &--desktop {
+    @media (max-width: 999px) {
+      display: none;
+    }
+  }
+}

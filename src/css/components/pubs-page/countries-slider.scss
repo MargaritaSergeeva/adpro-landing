@@ -1,0 +1,65 @@
+.countries-slider {
+  position: relative;
+
+  &__slider {
+    width: 81%;
+  }
+
+  &__prev {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+    width: 8px;
+    height: 20px;
+    background-image: url('~assets/main/prev.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: 0.3s all;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__next {
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    width: 8px;
+    height: 20px;
+    background-image: url('~assets/main/next.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: 0.3s all;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  @media(max-width: 767px) {
+    &__slider {
+      width: 77%;
+    }
+
+    &__prev {
+      width: 8px;
+      height: 19px;
+      background-size: contain;
+      left: 0;
+    }
+
+    &__next {
+      width: 8px;
+      height: 19px;
+      background-size: contain;
+      right: 0;
+    }
+  }
+}

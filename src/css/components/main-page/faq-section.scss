@@ -1,0 +1,122 @@
+.faq-section {
+  padding-top: 130px;
+  padding-bottom: 160px;
+  background-image: url('~assets/main/faq-bg.png');
+  background-repeat: no-repeat;
+  background-position: calc(50%) -18px;
+  background-size: 1655px;
+
+  &__container {
+    max-width: 1210px;
+  }
+
+  &__title {
+    margin-bottom: 90px;
+  }
+
+  &__list {
+    margin-bottom: 138px;
+    .q-item__label {
+      padding-top: 20px;
+      padding-bottom: 25px;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+
+  &__accordion {
+    border-bottom: 4px solid $white-color;
+
+    .q-focus-helper {
+      display: none;
+    }
+
+    .q-separator {
+      display: none;
+    }
+
+    .q-item {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .q-card {
+      background-color: transparent;
+      font-size: 18px;
+      line-height: 140%;
+      color: $text-color;
+
+      ul {
+        padding-left: 27px;
+      }
+    }
+
+    .q-card__section {
+      padding-top: 0;
+      padding-bottom: 45px;
+      padding-left: 115px;
+      padding-right: 115px;
+    }
+
+    .q-icon {
+      color: #000000;
+      font-size: 18px;
+    }
+  }
+
+  &__main-btn {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (max-width: 767px) {
+    background-image: url('~assets/main/faq-bg-mob.png');
+    padding-top: 78px;
+    padding-bottom: 50px;
+    background-size: 120%;
+    background-position: calc(50% + 28px) 0;
+
+    &__title {
+      margin-bottom: 52px;
+    }
+
+    &__list {
+      margin-bottom: 95px;
+      .q-item__label {
+        padding-top: 12px;
+        padding-bottom: 15px;
+        font-size: 16px;
+        line-height: 140%;
+      }
+    }
+
+    &__accordion {
+      .q-card {
+        font-size: 14px;
+        line-height: 140%;
+        color: $text-color;
+
+        ul {
+          padding-left: 27px;
+        }
+      }
+
+      .q-card__section {
+        padding-top: 5px;
+        padding-bottom: 35px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .q-icon {
+        font-size: 12px;
+      }
+    }
+
+    &__main-btn {
+      width: 100%;
+    }
+  }
+}

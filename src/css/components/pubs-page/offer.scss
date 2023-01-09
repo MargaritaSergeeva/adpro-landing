@@ -1,0 +1,129 @@
+.offer {
+  padding-top: 155px;
+  padding-bottom: 147px;
+  background-color: $text-bold-color;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 75px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 109px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+    padding-top: 98px;
+    margin-right: 48px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: $light-blue-color;
+    text-align: center;
+    width: 233px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 72px;
+      height: 72px;
+      transform: translate(-50%);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &:nth-child(1) {
+      &::before {
+        background-image: url('~assets/main/control.svg');
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        background-image: url('~assets/main/money.svg');
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        background-image: url('~assets/main/sites.svg');
+      }
+    }
+
+    &:nth-child(4) {
+      &::before {
+        background-image: url('~assets/main/unlock.svg');
+      }
+    }
+
+    &:nth-child(5) {
+      &::before {
+        background-image: url('~assets/main/eyers.svg');
+      }
+    }
+  }
+
+  &__main-btn {
+    width: 278px;
+  }
+
+  @media(max-width: 767px) {
+    padding-top: 85px;
+    padding-bottom: 95px;
+
+    &__title {
+      margin-bottom: 43px;
+    }
+
+    &__list {
+      margin-bottom: 48px;
+    }
+
+    &__item {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 31px;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 85px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      min-height: 0;
+      font-size: 14px;
+      line-height: 140%;
+      text-align: left;
+      min-height: 50px;
+
+      &::before {
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 51px;
+        height: 51px;
+      }
+    }
+
+    &__main-btn {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.contacts-form {
+  &__group-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .contacts-form__group {
+      width: 38%;
+
+      &--big {
+        width: 59%;
+      }
+    }
+  }
+
+  &__main-btn {
+    margin-top: 35px;
+  }
+
+  @media (max-width: 767px) {
+    &__group-wrapper {
+      flex-direction: column;
+
+      .contacts-form__group {
+        width: 100%;
+
+        &--big {
+          width: 100%;
+        }
+      }
+    }
+
+    &__main-btn {
+      margin-top: 18px;
+    }
+  }
+}

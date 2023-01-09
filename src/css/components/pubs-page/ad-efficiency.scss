@@ -1,0 +1,124 @@
+.ad-efficiency {
+  padding-top: 153px;
+  padding-bottom: 30px;
+  background-image: url('~assets/pubs/ad-efficiency-bg.png');
+  background-repeat: no-repeat;
+  background-position: calc(50% + 700px) 123px;
+
+  &__title {
+    margin-bottom: 100px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1265px;
+  }
+
+  &__block {
+    width: 44%;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 33px;
+    height: 175px;
+  }
+
+  &__img {
+    display: block;
+    width: 43%;
+  }
+
+  &__inner-title {
+    position: relative;
+    margin: 0;
+    padding-top: 32px;
+    padding-right: 120px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    width: 48%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 117px;
+      left: 0;
+      width: 100px;
+      height: 4px;
+      background-color: $white-color;
+    }
+  }
+
+  &__inner-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  @media(max-width: 999px) {
+    &__inner-title {
+      padding-right: 0;
+    }
+  }
+
+  @media(max-width: 767px) {
+    padding-top: 83px;
+    padding-bottom: 0;
+
+    &__title {
+      margin-bottom: 62px;
+    }
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__block {
+      width: 100%;
+      margin-bottom: 70px;
+    }
+
+    &__inner {
+      flex-direction: column;
+      margin-bottom: 26px;
+      height: auto;
+    }
+
+    &__img {
+      width: 55%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 32px;
+    }
+
+    &__inner-title {
+      margin: 0;
+      padding-top: 0;
+      padding-right: 0;
+      padding-bottom: 30px;
+      font-size: 16px;
+      line-height: 140%;
+      width: 100%;
+      text-align: center;
+
+      &::before {
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 52px;
+        height: 4px;
+        background-color: $white-color;
+      }
+    }
+
+    &__inner-text {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+}

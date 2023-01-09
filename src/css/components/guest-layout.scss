@@ -1,0 +1,8 @@
+.guest-layout {
+  display: flex;
+  flex-direction: column;
+  background-image: url('~assets/auth/auth-bg.png');
+  background-repeat: no-repeat;
+  background-position: calc(50% - 10px) 120px;
+  background-size: 1590px;
+}

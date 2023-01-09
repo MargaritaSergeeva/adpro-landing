@@ -1,0 +1,16 @@
+.registration-page {
+  padding-top: 66px;
+  padding-bottom: 117px;
+
+  &__title {
+    margin-bottom: 73px;
+  }
+
+  @media(max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 52px;
+    &__title {
+      margin-bottom: 48px;
+    }
+  }
+}
