@@ -40,36 +40,36 @@ const routes: RouteRecordRaw[] = [
         name: 'registration',
         component: () => import('pages/auth/RegistrationPage.vue')
       },
-      {
-        path: 'success-register',
-        name: 'success-register',
-        component: () => import('pages/auth/SuccessRegister.vue')
-      },
-      {
-        path: 'privacy-policy',
-        name: 'privacy-policy',
-        component: () => import('pages/auth/PrivacyPolicyPage.vue')
-      },
-      {
-        path: 'forgot-password',
-        name: 'forgot-password',
-        component: () => import('pages/auth/ForgotPassword.vue')
-      },
-      {
-        path: 'sent-email',
-        name: 'sent-email',
-        component: () => import('pages/auth/SentEmail.vue')
-      },
-      {
-        path: 'new-password',
-        name: 'new-password',
-        component: () => import('pages/auth/NewPassword.vue')
-      },
-      {
-        path: 'password-confirm',
-        name: 'password-confirm',
-        component: () => import('pages/auth/PasswordConfirm.vue')
-      },
+      // {
+      //   path: 'success-register',
+      //   name: 'success-register',
+      //   component: () => import('pages/auth/SuccessRegister.vue')
+      // },
+      // {
+      //   path: 'privacy-policy',
+      //   name: 'privacy-policy',
+      //   component: () => import('pages/auth/PrivacyPolicyPage.vue')
+      // },
+      // {
+      //   path: 'forgot-password',
+      //   name: 'forgot-password',
+      //   component: () => import('pages/auth/ForgotPassword.vue')
+      // },
+      // {
+      //   path: 'sent-email',
+      //   name: 'sent-email',
+      //   component: () => import('pages/auth/SentEmail.vue')
+      // },
+      // {
+      //   path: 'new-password',
+      //   name: 'new-password',
+      //   component: () => import('pages/auth/NewPassword.vue')
+      // },
+      // {
+      //   path: 'password-confirm',
+      //   name: 'password-confirm',
+      //   component: () => import('pages/auth/PasswordConfirm.vue')
+      // },
     ],
   },
 
