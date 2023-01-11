@@ -30,6 +30,16 @@ const routes: RouteRecordRaw[] = [
         name: 'terms&conditions',
         component: () => import('pages/TermsConditionsPage.vue'),
       },
+      {
+        path: 'offerforpartners',
+        name: 'offerforpartners',
+        component: () => import('pages/OfferForPartnersPage.vue'),
+      },
+      {
+        path: 'rulesforpartners',
+        name: 'rulesforpartners',
+        component: () => import('pages/RulesForPartnersPage.vue'),
+      },
     ],
   },
 
