@@ -10,10 +10,21 @@
     line-height: 71px;
   }
 
+  &__subtitle {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
   &__container {
     max-width: 1130px;
     padding: 73px 115px;
     background-color: $white-color;
+  }
+
+  &__underline {
+    text-decoration: underline;
   }
 
   @media (max-width: 767px) {
