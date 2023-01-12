@@ -27,6 +27,39 @@
     text-decoration: underline;
   }
 
+  .privacy-policy-protection {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      border: 1px solid black;
+      border-bottom: none;
+
+      &:last-child {
+        border-bottom: 1px solid black;
+      }
+    }
+
+    &__column {
+      flex: 1 1 50%;
+      max-width: 50%;
+      height: 100%;
+      padding: 10px;
+
+      &:last-child {
+        border-left: 1px solid black;
+
+        @media (max-width: 576px) {
+          flex: 1 1 80%;
+          max-width: 80%;
+        }
+      }
+    }
+  }
+
   @media (max-width: 767px) {
     padding-left: 15px;
     padding-right: 15px;
