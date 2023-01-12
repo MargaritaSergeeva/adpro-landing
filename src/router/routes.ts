@@ -1,4 +1,4 @@
-import {RouteRecordRaw} from 'vue-router';
+import { RouteRecordRaw } from 'vue-router';
 
 const routes: RouteRecordRaw[] = [
   {
@@ -8,17 +8,37 @@ const routes: RouteRecordRaw[] = [
       {
         path: '',
         name: 'main',
-        component: () => import('pages/MainPage.vue')
+        component: () => import('pages/MainPage.vue'),
       },
       {
         path: 'contacts',
         name: 'contacts',
-        component: () => import('pages/ContactsPage.vue')
+        component: () => import('pages/ContactsPage.vue'),
       },
       {
         path: 'pubs',
         name: 'pubs',
-        component: () => import('pages/PubsPage.vue')
+        component: () => import('pages/PubsPage.vue'),
+      },
+      {
+        path: 'privacypolicy',
+        name: 'privacypolicy',
+        component: () => import('pages/PrivacyPolicyPage.vue'),
+      },
+      {
+        path: 'terms&conditions',
+        name: 'terms&conditions',
+        component: () => import('pages/TermsConditionsPage.vue'),
+      },
+      {
+        path: 'offerforpartners',
+        name: 'offerforpartners',
+        component: () => import('pages/OfferForPartnersPage.vue'),
+      },
+      {
+        path: 'rulesforpartners',
+        name: 'rulesforpartners',
+        component: () => import('pages/RulesForPartnersPage.vue'),
       },
     ],
   },
@@ -27,18 +47,18 @@ const routes: RouteRecordRaw[] = [
     path: '/auth',
     component: () => import('layouts/GuestLayout.vue'),
     meta: {
-      auth: false
+      auth: false,
     },
     children: [
       {
         path: 'login',
         name: 'login',
-        component: () => import('pages/auth/LoginPage.vue')
+        component: () => import('pages/auth/LoginPage.vue'),
       },
       {
         path: 'registration',
         name: 'registration',
-        component: () => import('pages/auth/RegistrationPage.vue')
+        component: () => import('pages/auth/RegistrationPage.vue'),
       },
       // {
       //   path: 'success-register',
