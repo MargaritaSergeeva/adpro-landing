@@ -6,6 +6,8 @@
         <div class="main-footer__block">
           <p><span>Abbreviated name: ADPROFEX LTD</span></p>
           <p><span>Full name: ADPROFEX LIMITED</span></p>
+          <p class="main-footer__block-link main-footer__block-link--desc"><router-link to="/privacypolicy">Privacy policy</router-link></p>
+          <p class="main-footer__block-link main-footer__block-link--desc"><router-link to="/terms&conditions">Terms of service</router-link></p>
         </div>
         <div class="main-footer__block">
           <p>
@@ -31,6 +33,10 @@
         </div>
         <div class="main-footer__block-inner">
           <p><span class="main-footer__gap">Postal address:</span> Themistokli Dervi, 17-19 THE CITY HOUSE, 2nd floor 1066, Nicosia, <br>Cyprus</p>
+        </div>
+        <div class="main-footer__block-inner">
+          <p class="main-footer__block-link main-footer__block-link--mob"><router-link to="/privacypolicy">Privacy policy</router-link></p>
+          <p class="main-footer__block-link main-footer__block-link--mob"><router-link to="/terms&conditions">Terms of service</router-link></p>
         </div>
       </div>
     </div>
