@@ -80,6 +80,16 @@
       text-decoration: none;
       color: rgba(232, 240, 255, 0.7);
     }
+
+    .main-footer__block-link {
+      a {
+        text-decoration: underline;
+      }
+
+      &--mob {
+        display: none;
+      }
+    }
   }
 
   @media(max-width: 999px) {
@@ -177,6 +187,16 @@
 
         .main-footer__block-inner {
           margin-bottom: 20px;
+        }
+      }
+
+      .main-footer__block-link {
+        &--mob {
+          display: block;
+        }
+
+        &--desc {
+          display: none;
         }
       }
     }
