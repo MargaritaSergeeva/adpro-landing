@@ -6,7 +6,7 @@
       <q-btn type="a" href="https://cabinet.adprofex.com/login" class="auth-page__acc-btn auth-page__acc-btn--puplisher">
         Publisher
       </q-btn>
-      <q-btn class="auth-page__acc-btn auth-page__acc-btn--advertiser" type="a" href="#" disable>
+      <q-btn class="auth-page__acc-btn auth-page__acc-btn--advertiser" type="a" href="https://advertiser.adprofex.com/login">
         Advertiser
       </q-btn>
     </div>
