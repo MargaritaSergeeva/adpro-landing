@@ -1,0 +1,44 @@
+---
+# Default Docker Registry
+docker_registry:
+    address: "reg.techhprof.ru"
+    username: "ansible_adsbid"
+    password: "LucDgRE4jHy6RNHii77n7PbnCyyuJbhY"
+
+# Common Constants
+adprofex_landing_service_name: ads-adprofex-landing
+adprofex_landing_tag: stage
+adprofex_landing_placement_constraints: []
+adprofex_landing_networks: []
+adprofex_landing_endpoint_mode: dnsrr
+
+# Common Healthcheck Config
+adprofex_landing_healthcheck_test_command: ""
+adprofex_landing_healthcheck_interval: 30s
+adprofex_landing_healthcheck_retries: 3
+adprofex_landing_healthcheck_start_period: 0s
+adprofex_landing_healthcheck_timeout: 30s
+# Common Rollback Config
+adprofex_landing_update_config_order: start-first
+adprofex_landing_update_config_parallelism: 1
+adprofex_landing_update_config_failure_action: rollback
+adprofex_landing_update_config_delay: 10s
+adprofex_landing_update_config_monitor: 5s
+adprofex_landing_update_config_max_failure_ratio: 0.00
+adprofex_landing_rollback_config_order: stop-first
+adprofex_landing_rollback_config_parallelism: 0
+adprofex_landing_rollback_config_failure_action: continue
+adprofex_landing_rollback_config_delay: 1s
+adprofex_landing_rollback_config_monitor: 5s
+adprofex_landing_rollback_config_max_failure_ratio: 1.00
+
+# Common Variables
+adprofex_landing_reservations_cpus: "0.1"
+adprofex_landing_reservations_memory: "0.1G"
+adprofex_landing_limits_cpus: "1"
+adprofex_landing_limits_memory: "1G"
+adprofex_landing_mode: replicated
+adprofex_landing_replicas: 1
+
+# Common ENV
+# adprofex_landing_env_EXAMPLE: EXAMPLE
