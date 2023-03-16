@@ -40,6 +40,11 @@ const routes: RouteRecordRaw[] = [
         name: 'rulesforpartners',
         component: () => import('pages/RulesForPartnersPage.vue'),
       },
+      {
+        path: 'advertisers-agreement',
+        name: 'advertisers-agreement',
+        component: () => import('pages/AdvertisersAgreement.vue'),
+      },
     ],
   },
 
